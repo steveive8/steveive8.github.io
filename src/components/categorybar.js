@@ -8,6 +8,7 @@ const Bar = styled(Col)`
     height: 100%;
     position: absolute;
     background-color: rgba(244, 226, 198, 0.75);
+    background-color: rgba(75,75,75, 0.75);
     transition: left 300ms ease-in-out;
     left: ${props => props.categoryOn ? 0 : -Width / 6}px;
     top: 0px;

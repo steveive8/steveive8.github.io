@@ -17,8 +17,8 @@ export const ContributeMap = ({page}) => {
             textsize: 20,
             weight: '700',
             hovertextcolor: 'white',
-            textcolor: 'black',
-            bg: 'rgba(244, 226, 198, 0.75)',        },
+            textcolor: 'white',
+            bg: 'rgba(75,75,75,0.75)',        },
         {
             text: "#Ethereum",
             x: centerX + Width / 8,
@@ -27,8 +27,8 @@ export const ContributeMap = ({page}) => {
             textsize: 20,
             weight: '700',
             hovertextcolor: 'white',
-            textcolor: 'black',
-            bg: 'rgba(244, 226, 198, 0.75)',        },
+            textcolor: 'white',
+            bg: 'rgba(75,75,75,0.75)',        },
         {
             text: "#Deep Learning",
             x: centerX + Width / 10,
@@ -38,8 +38,8 @@ export const ContributeMap = ({page}) => {
             textsize: 20,
             weight: '700',
             hovertextcolor: 'white',
-            textcolor: 'black',
-            bg: 'rgba(244, 226, 198, 0.75)',        },
+            textcolor: 'white',
+            bg: 'rgba(75,75,75,0.75)',        },
         {
             text: "#CNN",
             x: centerX - Width / 8,
@@ -49,8 +49,8 @@ export const ContributeMap = ({page}) => {
             textsize: 20,
             weight: '700',
             hovertextcolor: 'white',
-            textcolor: 'black',
-            bg: 'rgba(244, 226, 198, 0.75)',        },
+            textcolor: 'white',
+            bg: 'rgba(75,75,75,0.75)',        },
         {
             text: "#YOLO",
             x: centerX - Width / 5,
@@ -60,8 +60,8 @@ export const ContributeMap = ({page}) => {
             textsize: 20,
             weight: '700',
             hovertextcolor: 'white',
-            textcolor: 'black',
-            bg: 'rgba(244, 226, 198, 0.75)',        },
+            textcolor: 'white',
+            bg: 'rgba(75,75,75,0.75)',        },
         {
             text: "#React.js",
             x: centerX - Width / 3,
@@ -71,8 +71,8 @@ export const ContributeMap = ({page}) => {
             textsize: 20,
             weight: '700',
             hovertextcolor: 'white',
-            textcolor: 'black',
-            bg: 'rgba(244, 226, 198, 0.75)',        },
+            textcolor: 'white',
+            bg: 'rgba(75,75,75,0.75)',        },
         {
             text: "#RNN",
             x: centerX - Width / 3.8,
@@ -82,8 +82,8 @@ export const ContributeMap = ({page}) => {
             textsize: 20,
             weight: '700',
             hovertextcolor: 'white',
-            textcolor: 'black',
-            bg: 'rgba(244, 226, 198, 0.75)',        },
+            textcolor: 'white',
+            bg: 'rgba(75,75,75,0.75)',        },
         {
             text: "#Reinforcement Learning",
             x: centerX,
@@ -93,8 +93,8 @@ export const ContributeMap = ({page}) => {
             textsize: 20,
             weight: '700',
             hovertextcolor: 'white',
-            textcolor: 'black',
-            bg: 'rgba(244, 226, 198, 0.75)',        },
+            textcolor: 'white',
+            bg: 'rgba(75,75,75,0.75)',        },
         {
             text: "#Artificial Intelligence",
             x: centerX - Width / 20,
@@ -104,8 +104,8 @@ export const ContributeMap = ({page}) => {
             textsize: 20,
             weight: '700',
             hovertextcolor: 'white',
-            textcolor: 'black',
-            bg: 'rgba(244, 226, 198, 0.75)',        },
+            textcolor: 'white',
+            bg: 'rgba(75,75,75,0.75)',        },
         {
             text: "#GraphQL",
             x: centerX - Width / 7,
@@ -115,8 +115,8 @@ export const ContributeMap = ({page}) => {
             textsize: 20,
             weight: '700',
             hovertextcolor: 'white',
-            textcolor: 'black',
-            bg: 'rgba(244, 226, 198, 0.75)',        }
+            textcolor: 'white',
+            bg: 'rgba(75,75,75,0.75)',        }
     ]
     return (
         <Flex width="100%" height={300}>
