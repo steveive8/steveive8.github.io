@@ -8,7 +8,7 @@ export const App = ({}) => {
   return (
     <>
       <GlobalStyles />
-      <div style={{width: '100vw', height: '100vh', overflow: 'hidden', position: 'relative'}}>
+      <div style={{width: '100vw', height: '100vh', overflow: page !== 2 && 'hidden', position: 'relative'}}>
         <Intro page={page} setPage={setPage} />
         {page === 2 && <Main page={page} setPage={setPage} />}
       </div>

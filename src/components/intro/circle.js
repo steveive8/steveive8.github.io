@@ -37,11 +37,11 @@ export const Circle = ({page, setPage}) => {
             size: 230,
             left: false,
             textsize: 20,
-            textcolor: 'black',
+            textcolor: 'white',
             hovertextcolor: 'white',
             weight: '700',
-            hovercolor: 'rgba(23,23,23,0.85)',
-            bg: 'rgba(200,200,200,0.9)',
+            bg: 'rgba(75,75,75,0.85)',
+            hovercolor: 'rgba(20,20,20,0.75)',
             hoverFunc: hoverer
         },
         {
@@ -50,11 +50,11 @@ export const Circle = ({page, setPage}) => {
             y: centerY - 70,
             size: 230,
             textsize: 20,
-            textcolor: 'black',
+            textcolor: 'white',
             hovertextcolor: 'white',
             weight: '700',
-            hovercolor: 'rgba(23,23,23,0.85)',
-            bg: 'rgba(200,200,200,0.9)',
+            bg: 'rgba(75,75,75,0.85)',
+            hovercolor: 'rgba(20,20,20,0.75)',
             hoverFunc: hoverer
         },
         {
@@ -64,11 +64,11 @@ export const Circle = ({page, setPage}) => {
             size: 230,
             top: false,
             textsize: 20,
-            textcolor: 'black',
+            textcolor: 'white',
             hovertextcolor: 'white',
             weight: '700',
-            hovercolor: 'rgba(23,23,23,0.85)',
-            bg: 'rgba(200,200,200,0.9)',
+            bg: 'rgba(75,75,75,0.85)',
+            hovercolor: 'rgba(20,20,20,0.75)',
             hoverFunc: hoverer
         }
     ]

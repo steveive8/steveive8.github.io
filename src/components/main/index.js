@@ -13,7 +13,7 @@ export const Index = ({page, setPage}) => {
         }, 700)
     })
     return (
-        <Row style={{width: '100vw', height: '100vh', overflow: 'hidden', opacity: opacity, transition: 'opacity 800ms ease-in-out'}}>
+        <Row style={{width: '100vw', height: '100vh', opacity: opacity, transition: 'opacity 800ms ease-in-out'}}>
             <Main page={page} categoryOn={categoryOn} setCategoryOn={setCategoryOn} />
             <CategoryBar categoryOn={categoryOn} setCategoryOn={setCategoryOn} />
         </Row>

@@ -17,6 +17,7 @@ export const ContributeMap = ({page}) => {
             textsize: 20,
             weight: '700',
             hovertextcolor: 'white',
+            hovercolor: 'rgb(20,20,20,0.75)',
             textcolor: 'white',
             bg: 'rgba(75,75,75,0.75)',        },
         {
@@ -27,6 +28,7 @@ export const ContributeMap = ({page}) => {
             textsize: 20,
             weight: '700',
             hovertextcolor: 'white',
+            hovercolor: 'rgb(20,20,20,0.75)',
             textcolor: 'white',
             bg: 'rgba(75,75,75,0.75)',        },
         {
@@ -38,6 +40,7 @@ export const ContributeMap = ({page}) => {
             textsize: 20,
             weight: '700',
             hovertextcolor: 'white',
+            hovercolor: 'rgb(20,20,20,0.75)',
             textcolor: 'white',
             bg: 'rgba(75,75,75,0.75)',        },
         {
@@ -49,6 +52,7 @@ export const ContributeMap = ({page}) => {
             textsize: 20,
             weight: '700',
             hovertextcolor: 'white',
+            hovercolor: 'rgb(20,20,20,0.75)',
             textcolor: 'white',
             bg: 'rgba(75,75,75,0.75)',        },
         {
@@ -60,6 +64,7 @@ export const ContributeMap = ({page}) => {
             textsize: 20,
             weight: '700',
             hovertextcolor: 'white',
+            hovercolor: 'rgb(20,20,20,0.75)',
             textcolor: 'white',
             bg: 'rgba(75,75,75,0.75)',        },
         {
@@ -71,6 +76,7 @@ export const ContributeMap = ({page}) => {
             textsize: 20,
             weight: '700',
             hovertextcolor: 'white',
+            hovercolor: 'rgb(20,20,20,0.75)',
             textcolor: 'white',
             bg: 'rgba(75,75,75,0.75)',        },
         {
@@ -82,6 +88,7 @@ export const ContributeMap = ({page}) => {
             textsize: 20,
             weight: '700',
             hovertextcolor: 'white',
+            hovercolor: 'rgb(20,20,20,0.75)',
             textcolor: 'white',
             bg: 'rgba(75,75,75,0.75)',        },
         {
@@ -93,6 +100,7 @@ export const ContributeMap = ({page}) => {
             textsize: 20,
             weight: '700',
             hovertextcolor: 'white',
+            hovercolor: 'rgb(20,20,20,0.75)',
             textcolor: 'white',
             bg: 'rgba(75,75,75,0.75)',        },
         {
@@ -104,6 +112,7 @@ export const ContributeMap = ({page}) => {
             textsize: 20,
             weight: '700',
             hovertextcolor: 'white',
+            hovercolor: 'rgb(20,20,20,0.75)',
             textcolor: 'white',
             bg: 'rgba(75,75,75,0.75)',        },
         {
@@ -115,11 +124,12 @@ export const ContributeMap = ({page}) => {
             textsize: 20,
             weight: '700',
             hovertextcolor: 'white',
+            hovercolor: 'rgb(20,20,20,0.75)',
             textcolor: 'white',
             bg: 'rgba(75,75,75,0.75)',        }
     ]
     return (
-        <Flex width="100%" height={300}>
+        <Flex width="100%" height={'500px'}>
             <Text weight="700" size="30" style={{position: 'absolute', top: 145, left: Width / 20}}>Contribute Map</Text>
             <CircleBox page={page === 2 ? 1 : 0} circles={circles} height={'100%'} />
         </Flex>
