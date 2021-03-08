@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/johnleo-space/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/johnleo-space/static/js/main.c8403a19.chunk.js",
+    "main.js.map": "/johnleo-space/static/js/main.c8403a19.chunk.js.map",
+    "runtime-main.js": "/johnleo-space/static/js/runtime-main.f7a437e6.js",
+    "runtime-main.js.map": "/johnleo-space/static/js/runtime-main.f7a437e6.js.map",
+    "static/js/2.b0794343.chunk.js": "/johnleo-space/static/js/2.b0794343.chunk.js",
+    "static/js/2.b0794343.chunk.js.map": "/johnleo-space/static/js/2.b0794343.chunk.js.map",
+    "index.html": "/johnleo-space/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/johnleo-space/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.b0794343.chunk.js.LICENSE.txt": "/johnleo-space/static/js/2.b0794343.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f7a437e6.js",
+    "static/js/2.b0794343.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.c8403a19.chunk.js"
+  ]
+}
