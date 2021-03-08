@@ -6,6 +6,7 @@ import Header from '../header';
 import ContributeMap from './contributeMap';
 import Mission from './mission';
 import Footer from '../footer';
+import Recent from './recentWork';
 
 const width = Width * 5 / 6;
 
@@ -23,6 +24,7 @@ export const Main = ({page, categoryOn, setCategoryOn}) => {
             <Header categoryOn={categoryOn} setCategoryOn={setCategoryOn} />
             <Flex margin="margin-top: 100px;" width='100%' height="100%">
                 <ContributeMap page={page} />
+                <Recent />
                 <Mission />
                 <Footer />
             </Flex>

@@ -120,7 +120,7 @@ export const ContributeMap = ({page}) => {
     ]
     return (
         <Flex width="100%" height={300}>
-            <Text weight="700" size="30" style={{position: 'absolute', top: 145, left: Width / 10}}>Contribute Map</Text>
+            <Text weight="700" size="30" style={{position: 'absolute', top: 145, left: Width / 20}}>Contribute Map</Text>
             <CircleBox page={page === 2 ? 1 : 0} circles={circles} height={'100%'} />
         </Flex>
     )
