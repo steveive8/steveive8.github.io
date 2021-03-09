@@ -7,7 +7,7 @@ import ContributeMap from './contributeMap';
 import Mission from './mission';
 import Footer from '../footer';
 
-const width = Width * 4 / 5;
+const width = Width * 5 / 6;
 
 const Box = styled(Flex)`
     position: absolute;

@@ -56,6 +56,7 @@ const SiderText = styled(Text)`
     font-weight: 700;
     color: white;
     text-align: center;
+    line-height: 45px;
 `;
 
 

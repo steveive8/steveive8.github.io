@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const Text = styled.span`
     font-weight: ${props => props.weight};
     font-size: ${props => props.size ? props.size : 15}px;
-    line-height: ${props => props.lh};
+    line-height: ${props => props.lh}px;
     color: ${props => props.color};
     ${props => props.margin};
     ${props => props.padding};
@@ -61,8 +61,8 @@ export const IconWrap = styled.div`
 export const Image = styled.img`
     object-fit: ${props => props.of};
     ${props => props.margin};
-    width: ${props => props.width}px;
-    height: ${props => props.height}px;
+    width: ${props => props.width};
+    height: ${props => props.height};
     opacity: ${props => props.opacity};
 `;
 
