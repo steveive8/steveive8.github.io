@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/JohnLeo-Space/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/JohnLeo-Space/static/js/main.b382a33f.chunk.js",
-    "main.js.map": "/JohnLeo-Space/static/js/main.b382a33f.chunk.js.map",
+    "main.js": "/JohnLeo-Space/static/js/main.283ce8f0.chunk.js",
+    "main.js.map": "/JohnLeo-Space/static/js/main.283ce8f0.chunk.js.map",
     "runtime-main.js": "/JohnLeo-Space/static/js/runtime-main.8620e930.js",
     "runtime-main.js.map": "/JohnLeo-Space/static/js/runtime-main.8620e930.js.map",
     "static/js/2.3297e446.chunk.js": "/JohnLeo-Space/static/js/2.3297e446.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.8620e930.js",
     "static/js/2.3297e446.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.b382a33f.chunk.js"
+    "static/js/main.283ce8f0.chunk.js"
   ]
 }
