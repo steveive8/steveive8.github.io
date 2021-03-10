@@ -1,4 +1,10 @@
 import React, {useState, useEffect} from 'react';
+import {
+    BrowserView,
+    MobileView,
+    isBrowser,
+    isMobile
+  } from "react-device-detect";
 import {Text, Flex, Col} from '../common/plain';
 import styled from 'styled-components';
 import {Height, Width} from '../../hooks/getWindow';
@@ -44,19 +50,22 @@ const Fader = styled(Col)`
 `;
 
 const HeaderText = styled(Text)`
-    font-size: 55px;
+    font-size: ${isMobile ? 35 : 55}px;
+    line-height: ${isMobile ? 40 : 55}px;
     font-weight: 700;
     color: white;
-    margin-bottom: ${props => props.siderText ? 0 : 25}px;
+    margin-bottom: ${props => props.siderText ? 0 : 18}px;
     display: block;
+    align-items: center;
+    text-align: ${props => props.service && 'center'};
 `;
 
 const SiderText = styled(Text)`
-    font-size: ${props => props.size ? props.size : 45}px;
+    font-size: ${isMobile ? 25 : 45}px;
     font-weight: 700;
     color: white;
     text-align: center;
-    line-height: 45px;
+    line-height: ${isMobile ? 25 : 50}px;
 `;
 
 
@@ -116,29 +125,29 @@ export const Head = ({page, setPage}) => {
     }, [on, page, setPage])
     const contents = [
         {
-            header: <HeaderText>Hello! My name is John Leo</HeaderText>,
+            header: <HeaderText mobile={isMobile}>Hello! {isMobile && <br></br>} My name is John Leo</HeaderText>,
         },
         {
-            header: <HeaderText>Welcome to John Leo's Space.</HeaderText>,
+            header: <HeaderText>Welcome to {isMobile && <br></br>}John Leo's Space.</HeaderText>,
         },
         {
             header: <HeaderText>I'm interested In...</HeaderText>,
         },
         {
             header: <HeaderText>Artificial Intelligence</HeaderText>,
-            sider: <SiderText>Deep Learning, Reinforcement Learning</SiderText>
+            sider: <SiderText>Deep Learning, {isMobile && <br></br>}Reinforcement Learning</SiderText>
         },
         {
-            header: <HeaderText>Service Design & Develop</HeaderText>,
+            header: <HeaderText service={true}>Service {isMobile && <br></br>} Design & Develop</HeaderText>,
             sider: <SiderText>Full Stack Engineering</SiderText>
         },
         {
             header: <HeaderText>Blockchain</HeaderText>,
-            sider: <SiderText size={40}>"Zero Marginal Cost Society"<br></br>Decentralized Protocal</SiderText>
+            sider: <SiderText>"Zero Marginal Cost Society"<br></br>Decentralized Protocal</SiderText>
         },
     ]
     return (
-        <Flex width='100vw' height="100vh" align="center" justify="center" style={{position: 'absolute', top: position, opacity: page === 0 ? 1 : 0, overflowY: 'disabled', transition: 'opacity 1s'}}>
+        <Flex width='100vw' height="100vh" align="center" justify="center" style={{position: 'absolute', top: position, opacity: page === 0 ? 1 : 0, overflow: 'hidden', transition: 'opacity 1s'}}>
             {contents.map((item, index) => <Fade key={index} on={on} siderOn={siderOn} index={index + 1} bottom={-Height} headerText={item.header} siderText={item.sider} />)}
         </Flex>
     )

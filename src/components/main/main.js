@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
+import {isMobile} from 'react-device-detect';
 import styled from 'styled-components';
-import { Width } from '../../hooks/getWindow';
+import { Height, Width } from '../../hooks/getWindow';
 import { Flex, Col } from '../common/plain';
 import Header from '../header';
 import ContributeMap from './contributeMap';
@@ -10,19 +11,16 @@ import Footer from '../footer';
 const width = Width * 5 / 6;
 
 const Box = styled(Flex)`
-    position: absolute;
     height: 100vh;
-    width: ${props => props.categoryOn ? width: Width}px;
-    transition: all 300ms ease-in-out;
-    right: 0px;
+    width: 100vw;
 `;
 
 export const Main = ({page, categoryOn, setCategoryOn}) => {
     return (
-        <Box categoryOn={categoryOn}>
+        <Box>
             <Header categoryOn={categoryOn} setCategoryOn={setCategoryOn} />
-            <Col margin="margin-top: 100px;" width='100%' height="100%">
-                <ContributeMap page={page} />
+            <Col width={'100%'} margin="margin-top: 80px;" height={Height+'px'}>
+                <ContributeMap categoryOn={categoryOn} page={page} />
                 <Mission />
                 <Footer />
             </Col>

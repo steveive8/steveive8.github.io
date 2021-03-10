@@ -1,10 +1,11 @@
 import React, {useState, useEffect} from 'react';
+import {isMobile, BrowserView, MobileView} from 'react-device-detect';
 import CircleBox from '../common/circle';
 import {Width, Height} from '../../hooks/getWindow';
 import { Col, Flex, Text } from '../common/plain';
 
-const centerX = Width / 2 - 115
-const centerY = Height / 2 - 180
+const centerX = isMobile ? Width / 2 - 90 : Width / 2 - 115
+const centerY = isMobile ? Height / 2 - 120 : Height / 2 - 180
 
 export const Circle = ({page, setPage}) => {
     const [position, setPosition] = useState(Height);
@@ -32,11 +33,11 @@ export const Circle = ({page, setPage}) => {
     const circles = [
         {
             text: "Design & Develop",
-            x: centerX + 100,
-            y: centerY + 100,
-            size: 230,
+            x: isMobile ? centerX + 80 : centerX + 100,
+            y: isMobile ? centerY + 80 : centerY + 100,
+            size: isMobile ? 180 : 230,
             left: false,
-            textsize: 20,
+            textsize: isMobile ? 15 : 20,
             textcolor: 'white',
             hovertextcolor: 'white',
             weight: '700',
@@ -47,9 +48,9 @@ export const Circle = ({page, setPage}) => {
         {
             text: "Artificial Intelligence",
             x: centerX,
-            y: centerY - 70,
-            size: 230,
-            textsize: 20,
+            y: isMobile ? centerY - 50 : centerY - 70,
+            size: isMobile ? 180 : 230,
+            textsize: isMobile ? 15 : 20,
             textcolor: 'white',
             hovertextcolor: 'white',
             weight: '700',
@@ -59,11 +60,11 @@ export const Circle = ({page, setPage}) => {
         },
         {
             text: "Blockchain",
-            x: centerX - 100,
-            y: centerY + 100,
-            size: 230,
+            x: isMobile ? centerX - 80 : centerX - 100,
+            y: isMobile ? centerY + 80 : centerY + 100,
+            size: isMobile ? 180 : 230,
             top: false,
-            textsize: 20,
+            textsize: isMobile ? 15 : 20,
             textcolor: 'white',
             hovertextcolor: 'white',
             weight: '700',
@@ -82,11 +83,11 @@ export const Circle = ({page, setPage}) => {
                 y={Height / 4}
                 content={
                     <Col>
-                        <Text weight="700" size="25" margin={"margin-bottom: 10px;"}>Artificial Intelligence</Text>
+                        <Text weight="700" size="25" margin={"margin-bottom: 20px;"}>Artificial Intelligence</Text>
                         <Text weight="500" size="18" margin="margin-left: 10px; margin-bottom: 10px;">Deep Learning</Text>
                         <Text weight="500" size="18" margin="margin-left: 10px; margin-bottom: 10px;">Reinforcement Learning</Text>
                         <Text weight="500" size="18" margin="margin-left: 10px;">Computer Vision with CNN</Text>
-                        <Text weight="700" size="18" margin={"margin: 10px 0px; margin-top:15px;"}>Mainly Stack to use</Text>
+                        <Text weight="700" size="18" margin={"margin: 20px 0px;"}>Mainly Stack to use</Text>
                         <Text weight="500" size="18" margin="margin-left: 10px; margin-bottom: 10px;">TensorFlow, Pytorch with Python</Text>
                         <Text weight="500" size="18" margin="margin-left: 10px; margin-bottom: 10px;">Open A.I</Text>
                     </Col>
@@ -98,9 +99,9 @@ export const Circle = ({page, setPage}) => {
                 y={Height / 3}
                 content={
                     <Col>
-                        <Text weight="700" size="25" margin={"margin-bottom: 10px;"}>Service Design & Develop</Text>
+                        <Text weight="700" size="25" margin={"margin-bottom: 20px;"}>Service Design & Develop</Text>
                         <Text weight="500" size="18" margin="margin-left: 10px;">Web, iOS, Android (Cross Platform)</Text>
-                        <Text weight="700" size="18" margin={"margin: 10px 0px; margin-top:15px;"}>Mainly Stack to use</Text>
+                        <Text weight="700" size="18" margin={"margin: 20px 0px;"}>Mainly Stack to use</Text>
                         <Text weight="700" size="18" margin="margin-bottom: 10px; margin-left: 10px;">FrontEnd</Text>
                         <Text weight="500" size="18" margin="margin-left: 20px; margin-bottom: 10px;">React.js, React Native, JS</Text>
                         <Text weight="700" size="18" margin="margin-bottom: 10px; margin-left: 10px;">BackEnd</Text>
@@ -114,10 +115,10 @@ export const Circle = ({page, setPage}) => {
                 y={Height / 2}
                 content={
                     <Col>
-                        <Text weight="700" size="25" margin={"margin-bottom: 10px;"}>Blockchain</Text>
+                        <Text weight="700" size="25" margin={"margin-bottom: 20px;"}>Blockchain</Text>
                         <Text weight="500" size="18" margin="margin-left: 10px; margin-bottom: 5px;">Mission to Create</Text>
                         <Text weight="500" size="18" margin="margin-left 10px;">"Zero Marginal Cost Society"</Text>
-                        <Text weight="700" size="18" margin={"margin: 10px 0px; margin-top:15px;"}>Mainly Stack to use</Text>
+                        <Text weight="700" size="18" margin={"margin: 20px 0px;"}>Mainly Stack to use</Text>
                         <Text weight="500" size="18" margin="margin-left: 10px; margin-bottom: 10px;">Ethereum Solidity</Text>
                     </Col>
                 } />
