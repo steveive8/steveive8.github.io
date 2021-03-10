@@ -12,7 +12,7 @@ export const Index = ({page, setPage}) => {
     useEffect(() => {
         page === 2 && setTimeout(() => {
             setOpacity(1);
-        }, 700)
+        }, 300)
     })
     return (
         <Row style={{width: '100vw', height: '100vh', opacity: opacity, transition: 'opacity 800ms ease-in-out'}}>
