@@ -138,7 +138,7 @@ export const ContributeMap = ({categoryOn, page}) => {
         <BrowserView>
             <Col width="100%" height={'430px'}>
                 <Text weight="700" size="30" style={{position: 'relative', left: Width / 20}}>Contribute Map</Text>
-                <Row align="center" style={{left: categoryOn ? '15%' : '10.8%',top: '5%', position: 'relative', width: '100%', transform:  categoryOn && 'scale(0.8)', transition: 'all 300ms'}}>
+                <Row align="center" style={{left: categoryOn ? '15%' : '10.8%', position: 'relative', width: '100%', transform:  categoryOn && 'scale(0.8)', transition: 'all 300ms'}}>
                     <CircleBox page={page === 2 ? 1 : 0} circles={circles} height={'100%'} />
                     <Image style={{width: '25%', position: 'relative', right: '15%', top: '25%'}} src="https://github-readme-stats.vercel.app/api/top-langs/?username=johnsteve108&theme=dark&langs_count=8)](https://github.com/johnsteve108/github-readme-stats)" />
                 </Row>

@@ -5,8 +5,8 @@ import { Col, Text } from './common/plain';
 import {Height, Width} from '../hooks/getWindow';
 
 const Bar = styled(Col)`
-    width: ${isMobile ? '100%' : (Width / 5.5) + 'px'};
-    height: ${isMobile ? '100%' : (Height - 180)+'px'};
+    width: ${isMobile ? '100vw' : (Width / 5.5) + 'px'};
+    height: ${isMobile ? '100vh' : (Height - 180)+'px'};
     position: fixed;
     background-color: rgba(244, 226, 198, 0.75);
     background-color: rgb(23,23,23);
@@ -16,7 +16,7 @@ const Bar = styled(Col)`
     padding: 30px;
     z-index: 100;
     padding-top: 50px;
-    overflow-y: scroll;
+    overflow: ${isMobile ? 'hidden' : 'scroll'};
 `;
 
 export const CategoryBar = ({categoryOn, setCategoryOn}) => {

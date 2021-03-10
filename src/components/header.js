@@ -40,7 +40,7 @@ export const Header = ({categoryOn, setCategoryOn, route = 'Lab'}) => {
 };
 
 export const MenuBtn = ({setCategoryOn, categoryOn}) => (
-    <Flex us="none" to={true} style={{position: 'absolute', top: isMobile ? 15 : 17, zIndex: 1000, right: isMobile ? 20 : 30}} onClick={() => setCategoryOn(!categoryOn)}>
+    <Flex us="none" to={true} style={{position: 'fixed', top: isMobile ? 15 : 17, zIndex: 1000, right: 20}} onClick={() => setCategoryOn(!categoryOn)}>
         <MenuButton />
     </Flex>
 )
