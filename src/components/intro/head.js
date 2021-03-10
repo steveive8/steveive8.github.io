@@ -40,8 +40,9 @@ const Sider = styled(Flex)`
 
 const Fader = styled(Col)`
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
     align-items: center;
     justify-content: center;
     opacity: ${props => props.on === props.index ? 1 : 0};
@@ -147,7 +148,7 @@ export const Head = ({page, setPage}) => {
         },
     ]
     return (
-        <Flex width='100%' height={isMobile ? "90%" : "100vh"} align="center" justify="center" style={{position: 'absolute', top: position, opacity: page === 0 ? 1 : 0, overflow: 'hidden', transition: 'opacity 1s'}}>
+        <Flex width='100%' height="100vh" align="center" justify="center" style={{position: 'fixed', top: position, opacity: page === 0 ? 1 : 0, overflow: 'hidden', transition: 'opacity 1s'}}>
             {contents.map((item, index) => <Fade key={index} on={on} siderOn={siderOn} index={index + 1} bottom={-Height} headerText={item.header} siderText={item.sider} />)}
         </Flex>
     )

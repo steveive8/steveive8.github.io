@@ -136,7 +136,7 @@ export const ContributeMap = ({categoryOn, page}) => {
     return (
         <>
         <BrowserView>
-            <Col width="100%" height={'430px'}>
+            <Col width="100%" height={'450px'}>
                 <Text weight="700" size="30" style={{position: 'relative', left: Width / 20}}>Contribute Map</Text>
                 <Row align="center" style={{left: categoryOn ? '15%' : '10.8%', position: 'relative', width: '100%', transform:  categoryOn && 'scale(0.8)', transition: 'all 300ms'}}>
                     <CircleBox page={page === 2 ? 1 : 0} circles={circles} height={'100%'} />

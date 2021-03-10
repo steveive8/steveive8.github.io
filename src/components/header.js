@@ -19,7 +19,7 @@ const Directory = styled(Row)`
 
 export const Header = ({categoryOn, setCategoryOn, route = 'Lab'}) => {
     return (
-        <Col justify="center" style={{position: 'fixed', top: 0, overflow: 'hidden', width: '100%', padding: 20, paddingLeft: 0, paddingRight: 0}} bg="black" zIndex={100}>
+        <Col justify="center" style={{position: 'fixed', top: 0, overflow: 'hidden', width: '100vw', padding: 20, paddingLeft: 0, paddingRight: 0, zIndex: 100}} bg="black" zIndex={100}>
             <Row padding={`padding-left: ${isMobile ? 20 : 30}px`} justify="space-between" align="center">
                 <a href="/">
                     <Text us="none" style={{fontFamily: 'Geometos', color: 'white', fontSize: 25, fontWeight: '500'}}>John Leo's Space</Text>
@@ -40,7 +40,7 @@ export const Header = ({categoryOn, setCategoryOn, route = 'Lab'}) => {
 };
 
 export const MenuBtn = ({setCategoryOn, categoryOn}) => (
-    <Flex us="none" to={true} style={{position: 'fixed', top: isMobile ? 15 : 17, zIndex: 1000, right: 20}} onClick={() => setCategoryOn(!categoryOn)}>
+    <Flex us="none" to={true} style={{position: 'fixed', top: isMobile ? 15 : 17, zIndex: 1000, right: isMobile ? 30 : 20}} onClick={() => setCategoryOn(!categoryOn)}>
         <MenuButton />
     </Flex>
 )

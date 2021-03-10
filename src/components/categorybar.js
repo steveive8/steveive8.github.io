@@ -14,7 +14,7 @@ const Bar = styled(Col)`
     left: ${props => props.categoryOn ? 0 : isMobile ? '-100%' : (-Width / 5) + 'px'};
     top: ${isMobile ? 0 : 110}px;
     padding: 30px;
-    z-index: 100;
+    z-index: 1000;
     padding-top: 50px;
     overflow: ${isMobile ? 'hidden' : 'scroll'};
 `;
