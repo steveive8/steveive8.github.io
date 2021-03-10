@@ -1,10 +1,11 @@
 import React from 'react';
 import { Flex, Col, Row, Text, Image } from '../common/plain';
 import styled from 'styled-components';
+import { BrowserView, isMobile, MobileView } from 'react-device-detect';
 
 const Box = styled(Flex)`
     border-radius: 20px;
-    width: 300px;
+    width: ${isMobile ? '100%' : 300 + 'px'};
     height: 180px;
     background-color: rgb(23,23,23);
     margin-right: 15px;
@@ -14,6 +15,7 @@ const Box = styled(Flex)`
     };
     overflow: hidden;
     position: relative;
+    margin-bottom: 20px;
 `;
 
 export const Project = ({title, description, imgsrc, date}) => {
@@ -31,30 +33,45 @@ export const Project = ({title, description, imgsrc, date}) => {
 
 export const Mission = ({}) => {
     return (
-        <Col padding="padding: 0px 60px;">
-            <Row align="center" width="100%" justify="space-between">
-                <Text size="30" weight="700" margin="margin-bottom: 50px;">Recent Work</Text>
-                <Text size="18" weight="500" to={true} us="none" color="rgb(180,180,180)" margin="margin-right: 20px;">See All</Text>
-            </Row>
-            <Row margin="margin-bottom: 20px;" align="center" justify="center">
+        <>
+            <BrowserView>
+                <Col padding="padding: 0px 60px;">
+                    <Row align="center" width="100%" margin="margin-bottom: 50px;" justify="space-between">
+                        <Text size="30" weight="700" >Recent Work</Text>
+                        <Text size="18" weight="500" to={true} us="none" color="rgb(180,180,180)" margin="margin-right: 20px; padding-top: 10px;">See All</Text>
+                    </Row>
+                    <Row align="center" justify="center">
+                        <Project title="YOLOv3 implement" description="Yolov3 is the real time object detection model that is the most fastest model ever since the deep learning introduced." date="2020-12-21" imgsrc="https://cdn.pixabay.com/photo/2021/02/07/09/11/sunset-5990540_1280.jpg" />
+                        <Project title="YOLOv3 implement" description="Yolov3 is the real time object detection model that is the most fastest model ever since the deep learning introduced." date="2020-12-21" imgsrc="https://cdn.pixabay.com/photo/2021/02/07/09/11/sunset-5990540_1280.jpg" />
+                        <Project title="YOLOv3 implement" description="Yolov3 is the real time object detection model that is the most fastest model ever since the deep learning introduced." date="2020-12-21" imgsrc="https://cdn.pixabay.com/photo/2021/02/07/09/11/sunset-5990540_1280.jpg" />
+                        <Project title="YOLOv3 implement" description="Yolov3 is the real time object detection model that is the most fastest model ever since the deep learning introduced." date="2020-12-21" imgsrc="https://cdn.pixabay.com/photo/2021/02/07/09/11/sunset-5990540_1280.jpg" />
+                    </Row>
+                    <Row align="center" justify="center">
+                        <Project title="YOLOv3 implement" description="Yolov3 is the real time object detection model that is the most fastest model ever since the deep learning introduced." date="2020-12-21" imgsrc="https://cdn.pixabay.com/photo/2021/02/07/09/11/sunset-5990540_1280.jpg" />
+                        <Project title="YOLOv3 implement" description="Yolov3 is the real time object detection model that is the most fastest model ever since the deep learning introduced." date="2020-12-21" imgsrc="https://cdn.pixabay.com/photo/2021/02/07/09/11/sunset-5990540_1280.jpg" />
+                        <Project title="YOLOv3 implement" description="Yolov3 is the real time object detection model that is the most fastest model ever since the deep learning introduced." date="2020-12-21" imgsrc="https://cdn.pixabay.com/photo/2021/02/07/09/11/sunset-5990540_1280.jpg" />
+                        <Project title="YOLOv3 implement" description="Yolov3 is the real time object detection model that is the most fastest model ever since the deep learning introduced." date="2020-12-21" imgsrc="https://cdn.pixabay.com/photo/2021/02/07/09/11/sunset-5990540_1280.jpg" />
+                    </Row>
+                    <Row align="center" justify="center">
+                        <Project title="YOLOv3 implement" description="Yolov3 is the real time object detection model that is the most fastest model ever since the deep learning introduced." date="2020-12-21" imgsrc="https://cdn.pixabay.com/photo/2021/02/07/09/11/sunset-5990540_1280.jpg" />
+                        <Project title="YOLOv3 implement" description="Yolov3 is the real time object detection model that is the most fastest model ever since the deep learning introduced." date="2020-12-21" imgsrc="https://cdn.pixabay.com/photo/2021/02/07/09/11/sunset-5990540_1280.jpg" />
+                        <Project title="YOLOv3 implement" description="Yolov3 is the real time object detection model that is the most fastest model ever since the deep learning introduced." date="2020-12-21" imgsrc="https://cdn.pixabay.com/photo/2021/02/07/09/11/sunset-5990540_1280.jpg" />
+                        <Project title="YOLOv3 implement" description="Yolov3 is the real time object detection model that is the most fastest model ever since the deep learning introduced." date="2020-12-21" imgsrc="https://cdn.pixabay.com/photo/2021/02/07/09/11/sunset-5990540_1280.jpg" />
+                    </Row>
+                </Col>
+            </BrowserView>
+            <MobileView>
+                <Row align="center" width="100%" justify="space-between" margin="margin-bottom: 30px;">
+                    <Text size="30" weight="700">Recent Work</Text>
+                    <Text size="18" weight="500" to={true} us="none" color="rgb(180,180,180)" margin="margin-right: 20px;">See All</Text>
+                </Row>
                 <Project title="YOLOv3 implement" description="Yolov3 is the real time object detection model that is the most fastest model ever since the deep learning introduced." date="2020-12-21" imgsrc="https://cdn.pixabay.com/photo/2021/02/07/09/11/sunset-5990540_1280.jpg" />
                 <Project title="YOLOv3 implement" description="Yolov3 is the real time object detection model that is the most fastest model ever since the deep learning introduced." date="2020-12-21" imgsrc="https://cdn.pixabay.com/photo/2021/02/07/09/11/sunset-5990540_1280.jpg" />
                 <Project title="YOLOv3 implement" description="Yolov3 is the real time object detection model that is the most fastest model ever since the deep learning introduced." date="2020-12-21" imgsrc="https://cdn.pixabay.com/photo/2021/02/07/09/11/sunset-5990540_1280.jpg" />
                 <Project title="YOLOv3 implement" description="Yolov3 is the real time object detection model that is the most fastest model ever since the deep learning introduced." date="2020-12-21" imgsrc="https://cdn.pixabay.com/photo/2021/02/07/09/11/sunset-5990540_1280.jpg" />
-            </Row>
-            <Row margin="margin-bottom: 20px;" align="center" justify="center">
                 <Project title="YOLOv3 implement" description="Yolov3 is the real time object detection model that is the most fastest model ever since the deep learning introduced." date="2020-12-21" imgsrc="https://cdn.pixabay.com/photo/2021/02/07/09/11/sunset-5990540_1280.jpg" />
-                <Project title="YOLOv3 implement" description="Yolov3 is the real time object detection model that is the most fastest model ever since the deep learning introduced." date="2020-12-21" imgsrc="https://cdn.pixabay.com/photo/2021/02/07/09/11/sunset-5990540_1280.jpg" />
-                <Project title="YOLOv3 implement" description="Yolov3 is the real time object detection model that is the most fastest model ever since the deep learning introduced." date="2020-12-21" imgsrc="https://cdn.pixabay.com/photo/2021/02/07/09/11/sunset-5990540_1280.jpg" />
-                <Project title="YOLOv3 implement" description="Yolov3 is the real time object detection model that is the most fastest model ever since the deep learning introduced." date="2020-12-21" imgsrc="https://cdn.pixabay.com/photo/2021/02/07/09/11/sunset-5990540_1280.jpg" />
-            </Row>
-            <Row margin="margin-bottom: 20px;" align="center" justify="center">
-                <Project title="YOLOv3 implement" description="Yolov3 is the real time object detection model that is the most fastest model ever since the deep learning introduced." date="2020-12-21" imgsrc="https://cdn.pixabay.com/photo/2021/02/07/09/11/sunset-5990540_1280.jpg" />
-                <Project title="YOLOv3 implement" description="Yolov3 is the real time object detection model that is the most fastest model ever since the deep learning introduced." date="2020-12-21" imgsrc="https://cdn.pixabay.com/photo/2021/02/07/09/11/sunset-5990540_1280.jpg" />
-                <Project title="YOLOv3 implement" description="Yolov3 is the real time object detection model that is the most fastest model ever since the deep learning introduced." date="2020-12-21" imgsrc="https://cdn.pixabay.com/photo/2021/02/07/09/11/sunset-5990540_1280.jpg" />
-                <Project title="YOLOv3 implement" description="Yolov3 is the real time object detection model that is the most fastest model ever since the deep learning introduced." date="2020-12-21" imgsrc="https://cdn.pixabay.com/photo/2021/02/07/09/11/sunset-5990540_1280.jpg" />
-            </Row>
-        </Col>
+            </MobileView>
+        </>
     )
 };
 
