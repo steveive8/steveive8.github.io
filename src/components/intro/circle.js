@@ -74,7 +74,7 @@ export const Circle = ({page, setPage}) => {
         }
     ]
     return (
-        <Flex style={{width: '100%', height: '100%', position: 'absolute', opacity: page === 1 ? 1 : 0, transition: 'opacity 1s', top: position}}>
+        <Flex style={{width: '100vw', height: '100vh', position: 'absolute', opacity: page === 1 ? 1 : 0, transition: 'opacity 1s', top: position}}>
             <CircleBox page={page} circles={circles} height={300} />
             <Description 
                 hover={hover} 

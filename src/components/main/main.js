@@ -12,6 +12,8 @@ import Footer from '../footer';
 const Box = styled(Flex)`
     height: 100vh;
     width: 100vw;
+    overflow: hidden;
+    overflow-y: scroll;
 `;
 
 export const Main = ({page, categoryOn, setCategoryOn}) => {
