@@ -3,7 +3,8 @@ import {
     BrowserView,
     MobileView,
     isBrowser,
-    isMobile
+    isMobile,
+    isMobileSafari,
   } from "react-device-detect";
 import {Text, Flex, Col} from '../common/plain';
 import styled from 'styled-components';
@@ -148,7 +149,7 @@ export const Head = ({page, setPage}) => {
         },
     ]
     return (
-        <Flex width='100%' height="100vh" align="center" justify="center" style={{position: 'fixed', top: position, opacity: page === 0 ? 1 : 0, overflow: 'hidden', transition: 'opacity 1s'}}>
+        <Flex width='100%' height={isMobileSafari ? "90vh" : "100vh"} align="center" justify="center" style={{position: 'fixed', top: position, opacity: page === 0 ? 1 : 0, overflow: 'hidden', transition: 'opacity 1s'}}>
             {contents.map((item, index) => <Fade key={index} on={on} siderOn={siderOn} index={index + 1} bottom={-Height} headerText={item.header} siderText={item.sider} />)}
         </Flex>
     )

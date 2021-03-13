@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {isMobile, BrowserView, MobileView} from 'react-device-detect';
+import {isMobile, BrowserView, MobileView, isMobileSafari} from 'react-device-detect';
 import CircleBox from '../common/circle';
 import {Width, Height} from '../../hooks/getWindow';
 import { Col, Flex, Text } from '../common/plain';
@@ -74,7 +74,7 @@ export const Circle = ({page, setPage}) => {
         }
     ]
     return (
-        <Flex style={{width: '100vw', height: '100vh', position: 'absolute', opacity: page === 1 ? 1 : 0, transition: 'opacity 1s', top: position}}>
+        <Flex style={{width: '100vw', height: isMobileSafari ? '90vh' : '100vh', position: 'absolute', opacity: page === 1 ? 1 : 0, transition: 'opacity 1s', top: position}}>
             <CircleBox page={page} circles={circles} height={300} />
             <Description 
                 hover={hover} 
