@@ -74,8 +74,8 @@ export const Circle = ({page, setPage}) => {
         }
     ]
     return (
-        <Flex style={{width: '100vw', height: isMobileSafari ? '90vh' : '100vh', position: 'fixed', overflow: 'hidden', opacity: page === 1 ? 1 : 0, transition: 'opacity 1s', top: position}}>
-            <CircleBox page={page} circles={circles} height={300} />
+        <Flex style={{width: '100vw', height: isMobileSafari ? '80vh' : '100vh', position: 'fixed', overflow: 'hidden', opacity: page === 1 ? 1 : 0, transition: 'opacity 1s', top: position}}>
+            <CircleBox page={page} circles={circles} height={'100%'} />
             <Description 
                 hover={hover} 
                 index={1}

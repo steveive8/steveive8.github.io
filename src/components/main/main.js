@@ -14,6 +14,8 @@ const Box = styled(Flex)`
     width: 100vw;
     top: 0;
     position: fixed;
+    overflow: hidden;
+    overflow-y: scroll;
     left: 0;
 `;
 
