@@ -19,7 +19,7 @@ export default createGlobalStyle`
             opacity: 0.7;
         };
         color: white;
-        background-color: rgb(3,3,3);
+        background-color: black;
     }
     a {
         text-decoration: none;

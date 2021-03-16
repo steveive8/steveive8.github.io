@@ -9,7 +9,7 @@ const centerY = isMobile ? Height / 2 - 120 : Height / 2 - 180
 
 export const Circle = ({page, setPage}) => {
     const [position, setPosition] = useState(Height);
-    const [hover, setHover] = useState(null);
+    const [hover, setHover] = useState(1);
     const [next, setNext] = useState(false);
     useEffect(() => {
         page === 1 && !next && setTimeout(() => {
@@ -33,7 +33,7 @@ export const Circle = ({page, setPage}) => {
     const circles = [
         {
             text: "Design & Develop",
-            x: isMobile ? centerX + 80 : centerX + 100,
+            x: isMobile ? centerX + 80 : centerX + 310,
             y: isMobile ? centerY + 80 : centerY + 100,
             size: isMobile ? 180 : 230,
             left: false,
@@ -41,26 +41,26 @@ export const Circle = ({page, setPage}) => {
             textcolor: 'white',
             hovertextcolor: 'white',
             weight: '700',
-            bg: 'rgba(75,75,75,0.85)',
-            hovercolor: 'rgba(20,20,20,0.75)',
+            bg: 'rgba(80,80,80,0.85)',
+            hovercolor: 'rgba(20,20,20,0.85)',
             hoverFunc: hoverer
         },
         {
             text: "Artificial Intelligence",
-            x: centerX,
+            x: centerX + 210,
             y: isMobile ? centerY - 50 : centerY - 70,
             size: isMobile ? 180 : 230,
             textsize: isMobile ? 15 : 20,
             textcolor: 'white',
             hovertextcolor: 'white',
             weight: '700',
-            bg: 'rgba(75,75,75,0.85)',
-            hovercolor: 'rgba(20,20,20,0.75)',
+            bg: 'rgba(80,80,80,0.85)',
+            hovercolor: 'rgba(20,20,20,0.85)',
             hoverFunc: hoverer
         },
         {
             text: "Blockchain",
-            x: isMobile ? centerX - 80 : centerX - 100,
+            x: isMobile ? centerX - 80 : centerX + 110,
             y: isMobile ? centerY + 80 : centerY + 100,
             size: isMobile ? 180 : 230,
             top: false,
@@ -68,8 +68,8 @@ export const Circle = ({page, setPage}) => {
             textcolor: 'white',
             hovertextcolor: 'white',
             weight: '700',
-            bg: 'rgba(75,75,75,0.85)',
-            hovercolor: 'rgba(20,20,20,0.75)',
+            bg: 'rgba(80,80,80,0.85)',
+            hovercolor: 'rgba(20,20,20,0.85)',
             hoverFunc: hoverer
         }
     ]
@@ -79,47 +79,50 @@ export const Circle = ({page, setPage}) => {
             <Description 
                 hover={hover} 
                 index={1}
-                x={Width / 1.4}
-                y={Height / 4}
+                x={Width / 1.6}
+                y={Height / 3.2}
                 content={
-                    <Col>
+                    <Col align="center">
                         <Text weight="700" size="25" margin={"margin-bottom: 20px;"}>Artificial Intelligence</Text>
-                        <Text weight="500" size="18" margin="margin-left: 10px; margin-bottom: 10px;">Deep Learning</Text>
-                        <Text weight="500" size="18" margin="margin-left: 10px; margin-bottom: 10px;">Reinforcement Learning</Text>
-                        <Text weight="500" size="18" margin="margin-left: 10px;">Computer Vision with CNN</Text>
-                        <Text weight="700" size="18" margin={"margin: 20px 0px;"}>Mainly Stack to use</Text>
-                        <Text weight="500" size="18" margin="margin-left: 10px; margin-bottom: 10px;">TensorFlow, Pytorch with Python</Text>
-                        <Text weight="500" size="18" margin="margin-left: 10px; margin-bottom: 10px;">Open A.I</Text>
+                        <Text weight="500" size="18" margin="margin-bottom: 10px;">Deep Learning</Text>
+                        <Text weight="500" size="18" margin="margin-bottom: 10px;">Reinforcement Learning</Text>
+                        <Text weight="500" size="18">Computer Vision with CNN</Text>
+                        <Text weight="700" size="18" margin={"margin-top: 30px; margin-bottom: 10px;"}>Mainly Stack to use</Text>
+                        <Text weight="500" size="18" margin="margin-bottom: 10px;">TensorFlow, Pytorch, Open A.I</Text>
                     </Col>
                 } />
             <Description 
                 hover={hover} 
                 index={0} 
-                x={Width / 10}
+                x={Width / 1.6}
                 y={Height / 3}
                 content={
-                    <Col>
+                    <Col align="center">
                         <Text weight="700" size="25" margin={"margin-bottom: 20px;"}>Service Design & Develop</Text>
-                        <Text weight="500" size="18" margin="margin-left: 10px;">Web, iOS, Android (Cross Platform)</Text>
-                        <Text weight="700" size="18" margin={"margin: 20px 0px;"}>Mainly Stack to use</Text>
-                        <Text weight="700" size="18" margin="margin-bottom: 10px; margin-left: 10px;">FrontEnd</Text>
-                        <Text weight="500" size="18" margin="margin-left: 20px; margin-bottom: 10px;">React.js, React Native, JS</Text>
-                        <Text weight="700" size="18" margin="margin-bottom: 10px; margin-left: 10px;">BackEnd</Text>
-                        <Text weight="500" size="18" margin="margin-left: 20px; margin-bottom: 10px;">Node.js, SQL, GraphQL</Text>
+                        <Text weight="500" size="18">Web, iOS, Android (Cross Platform)</Text>
+                        <Text weight="700" size="18" margin={"margin-top: 30px; margin-bottom: 10px;"}>Mainly Stack to use</Text>
+                        <Text weight="500" size="18" margin="margin-bottom: 10px;">
+                            <Text weight="700" size="18" margin="margin-right: 10px;">FrontEnd</Text>
+                            React.js, React Native, JS</Text>
+                        
+                        <Text weight="500" size="18" margin="margin-bottom: 10px;">
+                            <Text weight="700" size="18" margin="margin-right: 10px;">BackEnd</Text>
+                            Node.js, SQL, GraphQL
+                        </Text>
                     </Col>
                 } />
             <Description 
                 hover={hover} 
                 index={2}
-                x={Width / 1.4}
-                y={Height / 2}
+                x={Width / 1.6}
+                y={Height / 3}
                 content={
-                    <Col>
+                    <Col align="center">
                         <Text weight="700" size="25" margin={"margin-bottom: 20px;"}>Blockchain</Text>
-                        <Text weight="500" size="18" margin="margin-left: 10px; margin-bottom: 5px;">Mission to Create</Text>
-                        <Text weight="500" size="18" margin="margin-left 10px;">"Zero Marginal Cost Society"</Text>
-                        <Text weight="700" size="18" margin={"margin: 20px 0px;"}>Mainly Stack to use</Text>
-                        <Text weight="500" size="18" margin="margin-left: 10px; margin-bottom: 10px;">Ethereum Solidity</Text>
+                        <Text weight="500" size="18" margin="margin-bottom: 5px;">Mission to Create</Text>
+                        <Text weight="500" size="18">"Zero Marginal Cost Society"</Text>
+                        <Text weight="700" size="18" margin={"margin-top: 30px; margin-bottom: 10px;"}>Mainly Stack to use</Text>
+                        <Text weight="500" size="18" margin="margin-bottom: 10px;">Ethereum Solidity</Text>
                     </Col>
                 } />
                 <Flex to={true} style={{opacity: next ? 1 : 0, transition: 'all 500ms', position: 'absolute', bottom: 38, right: 38}}>

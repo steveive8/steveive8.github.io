@@ -135,25 +135,24 @@ export const ContributeMap = ({categoryOn, page}) => {
     ]
     return (
         <>
-        <BrowserView>
-            <Col width="100%" height={'450px'}>
-                <Text weight="700" size="30" style={{position: 'relative', left: Width / 20}}>Contribute Map</Text>
-                <Row align="center" style={{left: categoryOn ? '15%' : '10.8%', position: 'relative', width: '100%', transform:  categoryOn && 'scale(0.8)', transition: 'all 300ms'}}>
-                    <CircleBox page={page === 2 ? 1 : 0} circles={circles} height={'100%'} />
-                    <Image style={{width: '25%', position: 'relative', right: '15%', top: '25%'}} src="https://github-readme-stats.vercel.app/api/top-langs/?username=johnsteve108&theme=dark&langs_count=8)](https://github.com/johnsteve108/github-readme-stats)" />
-                </Row>
-            </Col>
-        </BrowserView>
-        <MobileView>
-            <Text weight="700" size="30" style={{position: 'relative'}}>Contribute Map</Text>
-            <Col width="100%" height={'700px'}>
-                <Flex style={{padding: 15, position: 'relative', width: '100%', height: '55%', transform: 'scale(0.6)'}}>
-                    <CircleBox page={page === 2 ? 1 : 0} circles={circles} />
-                </Flex>
-                <Image style={{width: '100%', position: 'relative'}} src="https://github-readme-stats.vercel.app/api/top-langs/?username=johnsteve108&theme=dark&langs_count=8)](https://github.com/johnsteve108/github-readme-stats)" />
-            </Col>
-        </MobileView>
-        
+            <BrowserView>
+                <Col width="100%" height={'450px'}>
+                    <Text weight="700" size="30" style={{position: 'relative', left: Width / 20}}>Contribute Map</Text>
+                    <Row align="center" style={{left: categoryOn ? '15%' : '10.8%', position: 'relative', width: '100%', transform:  categoryOn && 'scale(0.8)', transition: 'all 300ms'}}>
+                        <CircleBox page={page === 2 ? 1 : 0} position="absolute" circles={circles} height={'100%'} />
+                        <Image style={{width: '25%', position: 'relative', right: '15%', top: '25%'}} src="https://github-readme-stats.vercel.app/api/top-langs/?username=johnsteve108&theme=dark&langs_count=8)](https://github.com/johnsteve108/github-readme-stats)" />
+                    </Row>
+                </Col>
+            </BrowserView>
+            <MobileView>
+                <Text weight="700" size="30" style={{position: 'relative'}}>Contribute Map</Text>
+                <Col width="100%" height={'700px'}>
+                    <Flex style={{padding: 15, position: 'relative', width: '100%', height: '55%', transform: 'scale(0.6)'}}>
+                        <CircleBox page={page === 2 ? 1 : 0} circles={circles} />
+                    </Flex>
+                    <Image style={{width: '100%', position: 'relative'}} src="https://github-readme-stats.vercel.app/api/top-langs/?username=johnsteve108&theme=dark&langs_count=8)](https://github.com/johnsteve108/github-readme-stats)" />
+                </Col>
+            </MobileView>
         </>
     )
 };

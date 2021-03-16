@@ -2,9 +2,19 @@ import React, {useEffect, useState} from 'react';
 import { isMobile } from 'react-device-detect';
 import styled from 'styled-components';
 import CategoryBar from '../categorybar';
-import { Row } from '../common/plain';
+import { Flex } from '../common/plain';
 import Main from './main';
 import {MenuBtn} from '../header';
+
+const MainBox = styled(Flex)`
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: ${props => props.opacity};
+    transition: opacity 800ms ease-in-out;
+`;
 
 export const Index = ({page, setPage}) => {
     const [categoryOn, setCategoryOn] = useState(false);
@@ -15,11 +25,11 @@ export const Index = ({page, setPage}) => {
         }, 300)
     })
     return (
-        <Row style={{width: '100vw', height: '100vh', overflow: 'hidden', opacity: opacity, transition: 'opacity 800ms ease-in-out'}}>
+        <MainBox oapcity={opacity}>
             <Main page={page} categoryOn={categoryOn} setCategoryOn={setCategoryOn} />
             <CategoryBar categoryOn={categoryOn} setCategoryOn={setCategoryOn} />
             <MenuBtn categoryOn={categoryOn} setCategoryOn={setCategoryOn} />
-        </Row>
+        </MainBox>
     )
 };
 
