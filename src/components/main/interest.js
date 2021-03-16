@@ -68,7 +68,45 @@ const Moving = ({list, speed}) => {
 }
 
 export const Interest = ({}) => {
-    const [now, setNow] = useState("A.I");
+    const [now, setNow] = useState("I'm interested in ...");
+    useEffect(() => {
+        const animate = () => {
+            now === "I'm interested in ..." && setTimeout(() => {
+                setNow("A.I")
+            }, 2500);
+            now === "A.I" && setTimeout(() => {
+                setNow("Blockchain")
+            }, 2500);
+            now === "Blockchain" && setTimeout(() => {
+                setNow("Design")
+            }, 2500);
+            now === "Design" && setTimeout(() => {
+                setNow("React.js")
+            }, 2500);
+            now === "React.js" && setTimeout(() => {
+                setNow("GraphQL")
+            }, 2500);
+            now === "GraphQL" && setTimeout(() => {
+                setNow("Buddhism")
+            }, 2500);
+            now === "Buddhism" && setTimeout(() => {
+                setNow("Physics")
+            }, 2500);
+            now === "Physics" && setTimeout(() => {
+                setNow("Deep Learning")
+            }, 2500);
+            now === "Deep Learning" && setTimeout(() => {
+                setNow("CNN")
+            }, 2500);
+            now === "CNN" && setTimeout(() => {
+                setNow("Reinforcement Learning")
+            }, 2500);
+            now === "Reinforcement Learning" && setTimeout(() => {
+                setNow("I'm interested in ...")
+            });
+        }
+        animate();
+    })
     const list = [
         {
             src: Logo,
@@ -148,17 +186,28 @@ export const Interest = ({}) => {
     ];
     return (
         <Col width="100vw" height="80vh" style={{position: 'absolute', top: '100vh'}} padding="padding-top: 85px;" align="center" justify="center">
-            <Row align="center" justify="center" padding="padding-top: 10px;">
-                <Text weight="700" size="45" margin="margin-right:10px">I'm interested in</Text>
-                <Text weight="700" size="45">{now}</Text>
+            <Row align="center" justify="center" padding="padding-top: 50px;">
+                <Flex position="absolute" width="100%" align="center" justify="center" style={{top: '60%'}}>
+                    <Text weight="700" size="45" style={{position: 'absolute', opacity: now === "I'm interested in ..." ? 1 : 0, transition: 'all 300ms'}}>I'm interested in ...</Text>
+                    <Text weight="700" size="45" style={{position: 'absolute', opacity: now === "A.I" ? 1 : 0, transition: 'all 300ms'}}>A.I</Text>
+                    <Text weight="700" size="45" style={{position: 'absolute', opacity: now === "Blockchain" ? 1 : 0, transition: 'all 300ms'}}>Blockchain</Text>
+                    <Text weight="700" size="45" style={{position: 'absolute', opacity: now === "Design" ? 1 : 0, transition: 'all 300ms'}}>Design</Text>
+                    <Text weight="700" size="45" style={{position: 'absolute', opacity: now === "React.js" ? 1 : 0, transition: 'all 300ms'}}>React.js</Text>
+                    <Text weight="700" size="45" style={{position: 'absolute', opacity: now === "GraphQL" ? 1 : 0, transition: 'all 300ms'}}>GraphQL</Text>
+                    <Text weight="700" size="45" style={{position: 'absolute', opacity: now === "Deep Learning" ? 1 : 0, transition: 'all 300ms'}}>Deep Learning</Text>
+                    <Text weight="700" size="45" style={{position: 'absolute', opacity: now === "CNN" ? 1 : 0, transition: 'all 300ms'}}>CNN</Text>
+                    <Text weight="700" size="45" style={{position: 'absolute', opacity: now === "Buddhism" ? 1 : 0, transition: 'all 300ms'}}>Buddhism</Text>
+                    <Text weight="700" size="45" style={{position: 'absolute', opacity: now === "Physics" ? 1 : 0, transition: 'all 300ms'}}>Physics</Text>
+                    <Text weight="700" size="45" style={{position: 'absolute', opacity: now === "Open A.I" ? 1 : 0, transition: 'all 300ms'}}>Open A.I</Text>
+                </Flex>
             </Row>
-            <Col height="100%" position="absolute">
-                <Row height="100%">
+            <Col height="100%" position="relative" style={{top: '-10%'}}>
+                <Row height="100%" >
                     <Moving list={list.slice(0, 5)} speed="17s" />
                     <Moving list={list.slice(0, 5)} speed="17s" />
                     <Moving list={list.slice(0, 5)} speed="17s" />
                 </Row>
-                <Row style={{position: 'relative', right: '10%'}}>
+                <Row  height="100%" position="relative" style={{right: '10%', top: '12%'}}>
                     <Moving list={list.slice(5, 10)} speed="17s" />
                     <Moving list={list.slice(5, 10)} speed="17s" />
                     <Moving list={list.slice(5, 10)} speed="17s" />

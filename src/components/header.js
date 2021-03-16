@@ -3,6 +3,7 @@ import { Col, Flex, Image, Row, Text } from './common/plain';
 import styled from 'styled-components';
 import { isMobile } from 'react-device-detect';
 import Logo from "../imgs/johnleologo.png";
+import GithubLogo from '../imgs/github.png';
 
 const A = styled.a`
     color: white;
@@ -38,6 +39,11 @@ export const Header = ({}) => {
             <A>
                 <Text>CONTACT</Text>
             </A>
+            <Row align="center" justify="flex-end" style={{flex: 1, paddingRight: 20}}>
+                <Link href="https://github.com/johnsteve108">
+                    <Image width={"30px"} src={GithubLogo} />
+                </Link>
+            </Row>
         </Row>
     )
 };
