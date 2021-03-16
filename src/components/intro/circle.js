@@ -14,7 +14,7 @@ export const Circle = ({page, setPage}) => {
     useEffect(() => {
         page === 1 && !next && setTimeout(() => {
             setNext(true)
-        }, 5000);
+        }, 3000);
     });
     useEffect(() => {
         if (page === 1){

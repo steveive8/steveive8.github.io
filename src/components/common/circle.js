@@ -15,14 +15,14 @@ const CircleFlex = styled(Flex)`
         background-color: ${props => props.hovercolor? props.hovercolor: 'black'};
         z-index: 10;
         span {
-            font-size: 25px;
+            font-size: ${props => props.hoversize ? props.hoversize : 25}px;
             color: ${props => props.hovertextcolor? props.hovertextcolor : 'black'};
             transition: all 300ms;
         };
     };
 `;
 
-export const Circle = ({hoverFunc, index, page, x, y, left = true, top = true, initX, initY, text, speed = '500', textsize, size = circlesize, bg = 'rgb(17,17,17)', weight = '500', textcolor = 'white', hovercolor, hovertextcolor}) => {
+export const Circle = ({hoverFunc, index, page, x, y, hoversize, left = true, top = true, initX, initY, text, speed = '500', textsize, size = circlesize, bg = 'rgb(17,17,17)', weight = '500', textcolor = 'white', hovercolor, hovertextcolor}) => {
     const [position, setPosition] = useState({X: initX ? initX : x - size * 3, Y: initY ? initY : y - size * 3})
     const [opacity, setOpacity] = useState(0);
     useEffect(() => {
@@ -48,7 +48,7 @@ export const Circle = ({hoverFunc, index, page, x, y, left = true, top = true, i
         page === 1 && animate();
     },[size, left, top, x, y, page])
     return (
-        <CircleFlex onMouseOver={() => hoverFunc && hoverFunc(index, true)} onMouseOut={() => hoverFunc && hoverFunc(index, false)} position={position} opacity={opacity} speed={speed} circle={true} to={true} bg={bg} align="center" justify="center" size={size+'px'} hovercolor={hovercolor} hovertextcolor={hovertextcolor}>
+        <CircleFlex onMouseOver={() => hoverFunc && hoverFunc(index, true)} onMouseOut={() => hoverFunc && hoverFunc(index, false)} hoversize={hoversize} position={position} opacity={opacity} speed={speed} circle={true} to={true} bg={bg} align="center" justify="center" size={size+'px'} hovercolor={hovercolor} hovertextcolor={hovertextcolor}>
             <Text size={textsize} style={{textAlign: 'center'}} weight={weight} color={textcolor}>{text}</Text>
         </CircleFlex>
     )
@@ -71,6 +71,7 @@ export const CircleBox = ({page, width = '100%', height, bg = 'rgba(0,0,0,0)', c
                     index={index}
                     initY={initY}
                     speed={item.speed}
+                    hoversize={item.hoversize}
                     bg={item.bg} 
                     text={item.text} 
                     weight={item.weight} 
