@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import { isMobile } from 'react-device-detect';
 import Logo from "../imgs/johnleologo.png";
 import GithubLogo from '../imgs/github.png';
+import Instagram from '../imgs/instagram.png'
 
 const A = styled.a`
     color: white;
@@ -40,6 +41,9 @@ export const Header = ({}) => {
                 <Text>CONTACT</Text>
             </A>
             <Row align="center" justify="flex-end" style={{flex: 1, paddingRight: 20}}>
+                <Link href="https://github.com/johnsteve108">
+                    <Image width={"30px"} src={Instagram} margin="margin-top: 2px" />
+                </Link>
                 <Link href="https://github.com/johnsteve108">
                     <Image width={"30px"} src={GithubLogo} />
                 </Link>

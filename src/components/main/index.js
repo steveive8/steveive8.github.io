@@ -8,7 +8,7 @@ import JohnLeoSpace from './johnleo';
 
 export const Index = ({}) => {
     return (
-        <Col width="100vw" height="100vh" position="fixed" zIndex={100} style={{top: 0, overflowY: 'scroll'}}>
+        <Col width="100vw" height="100vh" position="fixed" zIndex={100} style={{top: 0, overflow: 'hidden', overflowY: 'scroll'}}>
             <Header />
             <JohnLeoSpace />
             <Interest />
