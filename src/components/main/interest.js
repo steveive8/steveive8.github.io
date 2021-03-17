@@ -78,24 +78,30 @@ export const Interest = ({}) => {
                 setNow("Blockchain")
             }, 2500);
             now === "Blockchain" && setTimeout(() => {
-                setNow("Design")
+                setNow("Deep Learning")
             }, 2500);
-            now === "Design" && setTimeout(() => {
+            now === "Deep Learning" && setTimeout(() => {
                 setNow("React.js")
             }, 2500);
             now === "React.js" && setTimeout(() => {
                 setNow("GraphQL")
             }, 2500);
             now === "GraphQL" && setTimeout(() => {
+                setNow("Object Detection")
+            }, 2500);
+            now === "Object Detection" && setTimeout(() => {
                 setNow("Buddhism")
             }, 2500);
             now === "Buddhism" && setTimeout(() => {
                 setNow("Physics")
             }, 2500);
             now === "Physics" && setTimeout(() => {
-                setNow("Deep Learning")
+                setNow("Design")
             }, 2500);
-            now === "Deep Learning" && setTimeout(() => {
+            now === "Design" && setTimeout(() => {
+                setNow("Open A.I")
+            }, 2500);
+            now === "Open A.I" && setTimeout(() => {
                 setNow("CNN")
             }, 2500);
             now === "CNN" && setTimeout(() => {
@@ -199,6 +205,7 @@ export const Interest = ({}) => {
                     <Text weight="700" size="45" style={{position: 'absolute', opacity: now === "Buddhism" ? 1 : 0, transition: 'all 300ms'}}>Buddhism</Text>
                     <Text weight="700" size="45" style={{position: 'absolute', opacity: now === "Physics" ? 1 : 0, transition: 'all 300ms'}}>Physics</Text>
                     <Text weight="700" size="45" style={{position: 'absolute', opacity: now === "Open A.I" ? 1 : 0, transition: 'all 300ms'}}>Open A.I</Text>
+                    <Text weight="700" size="45" style={{position: 'absolute', opacity: now === "Object Detection" ? 1 : 0, transition: 'all 300ms'}}>Object Detection</Text>
                 </Flex>
             </Row>
             <Col height="100%" position="relative" style={{top: '-10%'}}>
