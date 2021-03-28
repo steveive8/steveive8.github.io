@@ -7,10 +7,10 @@ https://johnsteve108.github.io/JohnLeo-Space
 
 I'm interested in
 
-- A.I, especially computer vision with D.L.
-- Reinforcement Learning with Open A.I.
-- Protocol Economy, Share Economy Modeling to 'Zero Marginal Society'.
-- FrontEnd, BackEnd Enginnering with React.js, React Native, Javascript, Node.js, SQL.
-- Service Develop and Design, launching at the App Store and the Play Store with Cross Platform.
+- Adopting GAN(Generative Adversarial Network) to Art, Global Economy, and Human Cognitive.
+- Realtime Object Detection and developing CNN(Convolutional Neural Network) to the best capability.
+- Self training Gym Environment with combining GAN and Reinforcement Learning.
+- Protocol Economy, Share Economy Modeling to 'Zero Marginal Society' with Blockchain.
+- Service Develop and Design, FullStack Engineering with React.js, React Native, Javascript, Node.js, SQL.
 
 Thanks 😁
