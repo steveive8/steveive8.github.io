@@ -1,9 +1,9 @@
-# JohnLeo-Space
+# Steve Ive Space
 Introduction homepage of Steve Ive. You can find my projects, researches and philosophy etc.
 
-https://steveive108.github.io/JohnLeo-Space
+https://steveive108.github.io/steveivespace
 
-👋 Hi, I’m @johnsteve108 I'm an undergraduate student of Korea Univ. , department of Artificial Intelligence.
+👋 Hi, I’m @steveive108 I'm an undergraduate student of Korea Univ. , department of Artificial Intelligence.
 
 I'm interested in
 
