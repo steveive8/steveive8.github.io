@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/JohnLeo-Space/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/JohnLeo-Space/static/js/main.35a5e8ff.chunk.js",
-    "main.js.map": "/JohnLeo-Space/static/js/main.35a5e8ff.chunk.js.map",
-    "runtime-main.js": "/JohnLeo-Space/static/js/runtime-main.8620e930.js",
-    "runtime-main.js.map": "/JohnLeo-Space/static/js/runtime-main.8620e930.js.map",
-    "static/js/2.8a538f2e.chunk.js": "/JohnLeo-Space/static/js/2.8a538f2e.chunk.js",
-    "static/js/2.8a538f2e.chunk.js.map": "/JohnLeo-Space/static/js/2.8a538f2e.chunk.js.map",
-    "index.html": "/JohnLeo-Space/index.html",
-    "static/css/main.6dea0f05.chunk.css.map": "/JohnLeo-Space/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.8a538f2e.chunk.js.LICENSE.txt": "/JohnLeo-Space/static/js/2.8a538f2e.chunk.js.LICENSE.txt",
-    "static/media/instagram.75e0546a.png": "/JohnLeo-Space/static/media/instagram.75e0546a.png",
-    "static/media/johnleologo.26afb2f1.png": "/JohnLeo-Space/static/media/johnleologo.26afb2f1.png",
-    "static/media/sunset.9bf9a201.webp": "/JohnLeo-Space/static/media/sunset.9bf9a201.webp"
+    "main.css": "/steveivespace/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/steveivespace/static/js/main.dee31193.chunk.js",
+    "main.js.map": "/steveivespace/static/js/main.dee31193.chunk.js.map",
+    "runtime-main.js": "/steveivespace/static/js/runtime-main.e8b4b78e.js",
+    "runtime-main.js.map": "/steveivespace/static/js/runtime-main.e8b4b78e.js.map",
+    "static/js/2.3d5f6251.chunk.js": "/steveivespace/static/js/2.3d5f6251.chunk.js",
+    "static/js/2.3d5f6251.chunk.js.map": "/steveivespace/static/js/2.3d5f6251.chunk.js.map",
+    "index.html": "/steveivespace/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/steveivespace/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.3d5f6251.chunk.js.LICENSE.txt": "/steveivespace/static/js/2.3d5f6251.chunk.js.LICENSE.txt",
+    "static/media/instagram.75e0546a.png": "/steveivespace/static/media/instagram.75e0546a.png",
+    "static/media/johnleologo.26afb2f1.png": "/steveivespace/static/media/johnleologo.26afb2f1.png",
+    "static/media/sunset.9bf9a201.webp": "/steveivespace/static/media/sunset.9bf9a201.webp"
   },
   "entrypoints": [
-    "static/js/runtime-main.8620e930.js",
-    "static/js/2.8a538f2e.chunk.js",
+    "static/js/runtime-main.e8b4b78e.js",
+    "static/js/2.3d5f6251.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.35a5e8ff.chunk.js"
+    "static/js/main.dee31193.chunk.js"
   ]
 }
