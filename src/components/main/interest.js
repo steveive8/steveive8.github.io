@@ -117,77 +117,77 @@ export const Interest = ({}) => {
         {
             src: Logo,
             title: 'Apple Special Event',
-            description: "Apple got Special Event today. I don't give a shit. of course. fjlsdkajflddsjf jdfsajfd"
+            description: "Apple got Special Event today."
         },
         {
             src: Logo,
             title: 'Apple Special Event',
-            description: "Apple got Special Event today. I don't give a shit. of course. fjlsdkajflddsjf jdfsajfd"
+            description: "Apple got Special Event today."
         },
         {
             src: Logo,
             title: 'Apple Special Event',
-            description: "Apple got Special Event today. I don't give a shit. of course. fjlsdkajflddsjf jdfsajfd"
+            description: "Apple got Special Event today."
         },
         {
             src: Logo,
             title: 'Apple Special Event',
-            description: "Apple got Special Event today. I don't give a shit. of course. fjlsdkajflddsjf jdfsajfd"
+            description: "Apple got Special Event today."
         },
         {
             src: Logo,
             title: 'Apple Special Event',
-            description: "Apple got Special Event today. I don't give a shit. of course. fjlsdkajflddsjf jdfsajfd"
+            description: "Apple got Special Event today."
         },
         {
             src: Logo,
             title: 'Apple Special Event',
-            description: "Apple got Special Event today. I don't give a shit. of course. fjlsdkajflddsjf jdfsajfd"
+            description: "Apple got Special Event today."
         },
         {
             src: Logo,
             title: 'Apple Special Event',
-            description: "Apple got Special Event today. I don't give a shit. of course. fjlsdkajflddsjf jdfsajfd"
+            description: "Apple got Special Event today."
         },
         {
             src: Logo,
             title: 'Apple Special Event',
-            description: "Apple got Special Event today. I don't give a shit. of course. fjlsdkajflddsjf jdfsajfd"
+            description: "Apple got Special Event today."
         },
         {
             src: Logo,
             title: 'Apple Special Event',
-            description: "Apple got Special Event today. I don't give a shit. of course. fjlsdkajflddsjf jdfsajfd"
+            description: "Apple got Special Event today."
         },
         {
             src: Logo,
             title: 'Apple Special Event',
-            description: "Apple got Special Event today. I don't give a shit. of course. fjlsdkajflddsjf jdfsajfd"
+            description: "Apple got Special Event today."
         },
         {
             src: Logo,
             title: 'Apple Special Event',
-            description: "Apple got Special Event today. I don't give a shit. of course. fjlsdkajflddsjf jdfsajfd"
+            description: "Apple got Special Event today."
         },
         {
             src: Logo,
             title: 'Apple Special Event',
-            description: "Apple got Special Event today. I don't give a shit. of course. fjlsdkajflddsjf jdfsajfd"
+            description: "Apple got Special Event today."
         },
         {
             src: Logo,
             title: 'Apple Special Event',
-            description: "Apple got Special Event today. I don't give a shit. of course. fjlsdkajflddsjf jdfsajfd"
+            description: "Apple got Special Event today."
         },
         {
             src: Logo,
             title: 'Apple Special Event',
-            description: "Apple got Special Event today. I don't give a shit. of course. fjlsdkajflddsjf jdfsajfd"
+            description: "Apple got Special Event today."
         },
         {
             src: Logo,
             title: 'Apple Special Event',
-            description: "Apple got Special Event today. I don't give a shit. of course. fjlsdkajflddsjf jdfsajfd"
+            description: "Apple got Special Event today."
         }
     ];
     return (
