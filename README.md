@@ -1,16 +1,16 @@
-# JohnLeo-Space
-Introduction homepage of John Leo. You can find my projects, researches and philosophy etc.
+# Steve Ive Space
+Introduction homepage of Steve Ive. You can find my projects, researches and philosophy etc.
 
-https://johnsteve108.github.io/JohnLeo-Space
+https://steveive108.github.io/steveivespace
 
-👋 Hi, I’m @johnsteve108 I'm an undergraduate student of Korea Univ. , department of Artificial Intelligence.
+👋 Hi, I’m @steveive108 I'm an undergraduate student of Korea Univ. , department of Artificial Intelligence.
 
 I'm interested in
 
-- A.I, especially computer vision with D.L.
-- Reinforcement Learning with Open A.I.
-- Protocol Economy, Share Economy Modeling to 'Zero Marginal Society'.
-- FrontEnd, BackEnd Enginnering with React.js, React Native, Javascript, Node.js, SQL.
-- Service Develop and Design, launching at the App Store and the Play Store with Cross Platform.
+- Adopting GAN(Generative Adversarial Network) to Art, Global Economy, and Human Cognitive.
+- Realtime Object Detection and developing CNN(Convolutional Neural Network) to the best capability.
+- Self training Gym Environment with combining GAN and Reinforcement Learning.
+- Protocol Economy, Share Economy Modeling to 'Zero Marginal Society' with Blockchain.
+- Service Develop and Design, FullStack Engineering with React.js, React Native, Javascript, Node.js, SQL.
 
 Thanks 😁
