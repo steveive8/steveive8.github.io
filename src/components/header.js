@@ -41,10 +41,10 @@ export const Header = ({}) => {
                 <Text>CONTACT</Text>
             </A>
             <Row align="center" justify="flex-end" style={{flex: 1, paddingRight: 20}}>
-                <Link href="https://github.com/johnsteve108">
+                <Link href="https://github.com/steveive108">
                     <Image width={"30px"} src={Instagram} margin="margin-top: 2px" />
                 </Link>
-                <Link href="https://github.com/johnsteve108">
+                <Link href="https://github.com/steveive108">
                     <Image width={"30px"} src={GithubLogo} />
                 </Link>
             </Row>

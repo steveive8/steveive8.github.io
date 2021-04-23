@@ -4,7 +4,7 @@ import Main from './main';
 import GlobalStyles from '../Styles/GlobalStyles';
 
 export const App = ({}) => {
-  const [page, setPage] = useState(0);
+  const [page, setPage] = useState(2);
   return (
     <>
       <GlobalStyles />

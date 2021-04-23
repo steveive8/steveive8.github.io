@@ -127,10 +127,10 @@ export const Head = ({page, setPage}) => {
     }, [on, page, setPage])
     const contents = [
         {
-            header: <HeaderText mobile={isMobile}>Hello! {isMobile && <br></br>} My name is John Leo</HeaderText>,
+            header: <HeaderText mobile={isMobile}>Hello! {isMobile && <br></br>} My name is Steve Ive</HeaderText>,
         },
         {
-            header: <HeaderText>Welcome to {isMobile && <br></br>}John Leo's Space.</HeaderText>,
+            header: <HeaderText>Welcome to {isMobile && <br></br>}Steve Ive's Space.</HeaderText>,
         },
         {
             header: <HeaderText>I'm interested In...</HeaderText>,

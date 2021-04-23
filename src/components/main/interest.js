@@ -191,30 +191,28 @@ export const Interest = ({}) => {
         }
     ];
     return (
-        <Col width="100vw" height="80vh" style={{position: 'absolute', top: '100vh'}} padding="padding-top: 85px;" align="center" justify="center">
-            <Row align="center" justify="center" padding="padding-top: 50px;">
-                <Flex position="absolute" width="100%" align="center" justify="center" style={{top: '60%'}}>
-                    <Text weight="700" size="45" style={{position: 'absolute', opacity: now === "I'm interested in ..." ? 1 : 0, transition: 'all 300ms'}}>I'm interested in ...</Text>
-                    <Text weight="700" size="45" style={{position: 'absolute', opacity: now === "A.I" ? 1 : 0, transition: 'all 300ms'}}>A.I</Text>
-                    <Text weight="700" size="45" style={{position: 'absolute', opacity: now === "Blockchain" ? 1 : 0, transition: 'all 300ms'}}>Blockchain</Text>
-                    <Text weight="700" size="45" style={{position: 'absolute', opacity: now === "Design" ? 1 : 0, transition: 'all 300ms'}}>Design</Text>
-                    <Text weight="700" size="45" style={{position: 'absolute', opacity: now === "React.js" ? 1 : 0, transition: 'all 300ms'}}>React.js</Text>
-                    <Text weight="700" size="45" style={{position: 'absolute', opacity: now === "GraphQL" ? 1 : 0, transition: 'all 300ms'}}>GraphQL</Text>
-                    <Text weight="700" size="45" style={{position: 'absolute', opacity: now === "Deep Learning" ? 1 : 0, transition: 'all 300ms'}}>Deep Learning</Text>
-                    <Text weight="700" size="45" style={{position: 'absolute', opacity: now === "CNN" ? 1 : 0, transition: 'all 300ms'}}>CNN</Text>
-                    <Text weight="700" size="45" style={{position: 'absolute', opacity: now === "Buddhism" ? 1 : 0, transition: 'all 300ms'}}>Buddhism</Text>
-                    <Text weight="700" size="45" style={{position: 'absolute', opacity: now === "Physics" ? 1 : 0, transition: 'all 300ms'}}>Physics</Text>
-                    <Text weight="700" size="45" style={{position: 'absolute', opacity: now === "Open A.I" ? 1 : 0, transition: 'all 300ms'}}>Open A.I</Text>
-                    <Text weight="700" size="45" style={{position: 'absolute', opacity: now === "Object Detection" ? 1 : 0, transition: 'all 300ms'}}>Object Detection</Text>
-                </Flex>
-            </Row>
-            <Col height="100%" position="relative" style={{top: '-10%'}}>
+        <Col width="100vw" height="80vh" style={{position: 'absolute', top: '100vh'}} align="center" justify="center">
+            <Flex position="absolute" width="100%" height="100%" align="center" justify="center">
+                <Text weight="700" size="45" style={{position: 'absolute', opacity: now === "I'm interested in ..." ? 1 : 0, transition: 'all 300ms'}}>I'm interested in ...</Text>
+                <Text weight="700" size="45" style={{position: 'absolute', opacity: now === "A.I" ? 1 : 0, transition: 'all 300ms'}}>A.I</Text>
+                <Text weight="700" size="45" style={{position: 'absolute', opacity: now === "Blockchain" ? 1 : 0, transition: 'all 300ms'}}>Blockchain</Text>
+                <Text weight="700" size="45" style={{position: 'absolute', opacity: now === "Design" ? 1 : 0, transition: 'all 300ms'}}>Design</Text>
+                <Text weight="700" size="45" style={{position: 'absolute', opacity: now === "React.js" ? 1 : 0, transition: 'all 300ms'}}>React.js</Text>
+                <Text weight="700" size="45" style={{position: 'absolute', opacity: now === "GraphQL" ? 1 : 0, transition: 'all 300ms'}}>GraphQL</Text>
+                <Text weight="700" size="45" style={{position: 'absolute', opacity: now === "Deep Learning" ? 1 : 0, transition: 'all 300ms'}}>Deep Learning</Text>
+                <Text weight="700" size="45" style={{position: 'absolute', opacity: now === "CNN" ? 1 : 0, transition: 'all 300ms'}}>CNN</Text>
+                <Text weight="700" size="45" style={{position: 'absolute', opacity: now === "Buddhism" ? 1 : 0, transition: 'all 300ms'}}>Buddhism</Text>
+                <Text weight="700" size="45" style={{position: 'absolute', opacity: now === "Physics" ? 1 : 0, transition: 'all 300ms'}}>Physics</Text>
+                <Text weight="700" size="45" style={{position: 'absolute', opacity: now === "Open A.I" ? 1 : 0, transition: 'all 300ms'}}>Open A.I</Text>
+                <Text weight="700" size="45" style={{position: 'absolute', opacity: now === "Object Detection" ? 1 : 0, transition: 'all 300ms'}}>Object Detection</Text>
+            </Flex>
+            <Col height="100%" position="relative">
                 <Row height="100%" >
                     <Moving list={list.slice(0, 5)} speed="17s" />
                     <Moving list={list.slice(0, 5)} speed="17s" />
                     <Moving list={list.slice(0, 5)} speed="17s" />
                 </Row>
-                <Row  height="100%" position="relative" style={{right: '10%', top: '12%'}}>
+                <Row  height="100%" position="relative" style={{right: '10%', top: '5%'}}>
                     <Moving list={list.slice(5, 10)} speed="17s" />
                     <Moving list={list.slice(5, 10)} speed="17s" />
                     <Moving list={list.slice(5, 10)} speed="17s" />

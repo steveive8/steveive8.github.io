@@ -1,5 +1,5 @@
 {
-  "name": "johnleo-space",
+  "name": "steveive-space",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
@@ -28,7 +28,7 @@
       "react-app/jest"
     ]
   },
-  "homepage": "http://johnsteve108.github.io/JohnLeo-Space",
+  "homepage": "http://steveive108.github.io/steveivespace",
   "browserslist": {
     "production": [
       ">0.2%",
