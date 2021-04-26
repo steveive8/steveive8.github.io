@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import { Col, Flex, Image, Row, Text } from './common/plain';
 import styled from 'styled-components';
 import { isMobile } from 'react-device-detect';
-import Logo from "../imgs/johnleologo.png";
+import Logo from "../imgs/steveive_transparent.png";
 import GithubLogo from '../imgs/github.png';
 import Instagram from '../imgs/instagram.png'
 
