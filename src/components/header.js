@@ -25,7 +25,7 @@ const Link = styled.a`
 export const Header = ({}) => {
     return (
         <Row width="100%" position="fixed" align="center" zIndex={1000}>
-            <a href="/" style={{marginTop: 5, marginLeft: 10, marginRight: 20}}>
+            <a href="/" style={{marginTop: 5, marginLeft: 10, marginRight: 10}}>
                 <Image width={180} src={Logo} />
             </a>
             <A>
