@@ -49,6 +49,7 @@ export const Category = ({categoryon, setCategoryon}) => {
                 <>
                     <Minor head="A.I" array={ai} />
                     <Minor head="Blockchain" array={blockchain} />
+                    <Minor head="Math" array={math} />
                     <Minor head="Application" array={application} />
                 </>} />
             <Main head="Projects" elements={

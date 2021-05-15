@@ -1,11 +1,11 @@
 export const physics =  {
     modern: [{
         title: 'Modern Physics',
-        link: '/physics/modern-physics',
+        link: '/steveivespace/physics/modern-physics',
     }],
     quantam: [{
         title: 'Quantam Physics',
-        link: '/physics/quantam-physics',
+        link: '/steveivespace/physics/quantam-physics',
     }]
 };
 

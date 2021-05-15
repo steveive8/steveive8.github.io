@@ -1,43 +1,43 @@
 export const ai =  [
     {
         title: 'Convolutional Neural Network',
-        link: '/study/ai/cnn',
+        link: '/steveivespace/study/ai/cnn',
     },
     {
         title: 'Recurrent Neural Network',
-        link: '/study/ai/rnn',
+        link: '/steveivespace/study/ai/rnn',
     },
     {
         title: 'Generative Adversarial Neural Networks',
-        link: '/study/ai/gan',
+        link: '/steveivespace/study/ai/gan',
     },
     {
         title: 'Reinforcement Learning',
-        link: '/study/ai/reinforcementlearning',
+        link: '/steveivespace/study/ai/reinforcementlearning',
     },
     {
         title: 'TensorFlow',
-        link: '/study/ai/tensorflow',
+        link: '/steveivespace/study/ai/tensorflow',
     },
     {
         title: 'Pytorch',
-        link: '/study/ai/pytorch',
+        link: '/steveivespace/study/ai/pytorch',
     },
     {
         title: 'Pandas',
-        link: '/study/ai/pandas',
+        link: '/steveivespace/study/ai/pandas',
     },
     {
         title: 'Open A.I Gym',
-        link: '/study/ai/open-ai-gym',
+        link: '/steveivespace/study/ai/open-ai-gym',
     },
     {
         title: 'Book: Deep Learning from Scratch',
-        link: '/study/ai/deeplearningfromscratch',
+        link: '/steveivespace/study/ai/deeplearningfromscratch',
     },
     {
         title: 'Book: Generative Deep Learning',
-        link: '/study/ai/generativedeeplearning',
+        link: '/steveivespace/study/ai/generativedeeplearning',
     },
 ];
 
