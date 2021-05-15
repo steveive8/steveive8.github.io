@@ -41,7 +41,7 @@ const Minor = ({head, array, ai}) => {
 
 export const Category = ({categoryon, setCategoryon}) => {
     return (
-        <Col width="23%" height="100%" position="fixed" opacity={0.9} style={{right: categoryon ? 0 : '-23%', transition: 'all 200ms', overflowY: 'scroll'}} padding="padding: 20px;" bg="rgb(0,3,9)" zIndex={1000}>
+        <Col justify="space-between" width="23%" height="100%" position="fixed" opacity={0.9} style={{right: categoryon ? 0 : '-23%', transition: 'all 200ms', overflowY: 'scroll'}} padding="padding: 50px 20px;" bg="rgb(0,3,9)" zIndex={1000}>
             <Flex to="cursor" onClick={() => setCategoryon(false)} style={{right: 20, top: 20}} position="absolute">
                 <Close size={20} />
             </Flex>
