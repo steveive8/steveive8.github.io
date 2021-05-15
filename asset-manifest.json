@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/steveivespace/static/css/main.6dea0f05.chunk.css",
-    "main.js": "/steveivespace/static/js/main.a8e65861.chunk.js",
-    "main.js.map": "/steveivespace/static/js/main.a8e65861.chunk.js.map",
+    "main.js": "/steveivespace/static/js/main.f3a15ae4.chunk.js",
+    "main.js.map": "/steveivespace/static/js/main.f3a15ae4.chunk.js.map",
     "runtime-main.js": "/steveivespace/static/js/runtime-main.e8b4b78e.js",
     "runtime-main.js.map": "/steveivespace/static/js/runtime-main.e8b4b78e.js.map",
-    "static/js/2.3d5f6251.chunk.js": "/steveivespace/static/js/2.3d5f6251.chunk.js",
-    "static/js/2.3d5f6251.chunk.js.map": "/steveivespace/static/js/2.3d5f6251.chunk.js.map",
+    "static/js/2.b1b611d7.chunk.js": "/steveivespace/static/js/2.b1b611d7.chunk.js",
+    "static/js/2.b1b611d7.chunk.js.map": "/steveivespace/static/js/2.b1b611d7.chunk.js.map",
     "index.html": "/steveivespace/index.html",
     "static/css/main.6dea0f05.chunk.css.map": "/steveivespace/static/css/main.6dea0f05.chunk.css.map",
-    "static/js/2.3d5f6251.chunk.js.LICENSE.txt": "/steveivespace/static/js/2.3d5f6251.chunk.js.LICENSE.txt",
+    "static/js/2.b1b611d7.chunk.js.LICENSE.txt": "/steveivespace/static/js/2.b1b611d7.chunk.js.LICENSE.txt",
     "static/media/instagram.75e0546a.png": "/steveivespace/static/media/instagram.75e0546a.png",
     "static/media/steveive_transparent.aa682a59.png": "/steveivespace/static/media/steveive_transparent.aa682a59.png",
     "static/media/sunset.9bf9a201.webp": "/steveivespace/static/media/sunset.9bf9a201.webp"
   },
   "entrypoints": [
     "static/js/runtime-main.e8b4b78e.js",
-    "static/js/2.3d5f6251.chunk.js",
+    "static/js/2.b1b611d7.chunk.js",
     "static/css/main.6dea0f05.chunk.css",
-    "static/js/main.a8e65861.chunk.js"
+    "static/js/main.f3a15ae4.chunk.js"
   ]
 }
