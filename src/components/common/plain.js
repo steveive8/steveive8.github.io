@@ -42,6 +42,16 @@ export const Col = styled(Flex)`
     flex-direction: column;
 `;
 
+export const Link = styled.a`
+    text-decoration: none;
+    ${(props) => props.margin};
+    cursor: pointer;
+    :hover {
+        opacity: 0.85;
+    };
+    user-select: none;
+`;
+
 export const IconWrap = styled.div`
     svg {
         opacity: 0.85;

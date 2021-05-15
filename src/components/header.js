@@ -22,7 +22,7 @@ const Link = styled.a`
     cursor: pointer;
 `;
 
-export const Header = ({}) => {
+export const Header = ({categoryon, setCategoryon}) => {
     return (
         <Row width="100%" position="fixed" align="center" zIndex={1000}>
             <a href="/" style={{marginTop: 5, marginLeft: 10, marginRight: 10}}>
@@ -34,7 +34,7 @@ export const Header = ({}) => {
             <A>
                 <Text>ABOUT</Text>
             </A>
-            <A>
+            <A onClick={()=> setCategoryon(!categoryon)}>
                 <Text>WORK</Text>
             </A>
             <A>

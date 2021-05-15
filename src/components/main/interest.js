@@ -6,7 +6,7 @@ import {isMobile} from 'react-device-detect';
 import getWindow, {Height, Width} from '../../hooks/getWindow';
 import Logo from '../../imgs/sunset.webp';
 
-const itemsize = getWindow(23, 1, 0.8);
+const itemsize = getWindow(23, 1, 0.7);
 
 const Link = styled.a`
     cursor: pointer;
