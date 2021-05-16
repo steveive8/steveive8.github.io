@@ -48,7 +48,7 @@ export const Circle = ({hoverFunc, index, page, x, y, hoversize, left = true, to
         page === 1 && animate();
     },[size, left, top, x, y, page])
     return (
-        <CircleFlex onMouseOver={() => hoverFunc && hoverFunc(index, true)} onMouseOut={() => hoverFunc && hoverFunc(index, false)} hoversize={hoversize} position={position} opacity={opacity} speed={speed} circle={true} to={true} bg={bg} align="center" justify="center" size={size+'px'} hovercolor={hovercolor} hovertextcolor={hovertextcolor}>
+        <CircleFlex onMouseOver={() => hoverFunc && hoverFunc(index, true)} onMouseOut={() => hoverFunc && hoverFunc(index, false)} hoversize={hoversize} position={position} opacity={opacity} speed={speed} circle={true} to={'cursor'} bg={bg} align="center" justify="center" size={size+'px'} hovercolor={hovercolor} hovertextcolor={hovertextcolor}>
             <Text size={textsize} style={{textAlign: 'center'}} weight={weight} color={textcolor}>{text}</Text>
         </CircleFlex>
     )

@@ -125,7 +125,7 @@ export const Circle = ({page, setPage}) => {
                         <Text weight="500" size="18" margin="margin-bottom: 10px;">Ethereum Solidity</Text>
                     </Col>
                 } />
-                <Flex to={true} style={{opacity: next ? 1 : 0, transition: 'all 500ms', position: 'absolute', bottom: 38, right: 38}}>
+                <Flex to={'cursor'} style={{opacity: next ? 1 : 0, transition: 'all 500ms', position: 'absolute', bottom: 38, right: 38}}>
                     <Text weight="600" onClick={() => setPage(2)}>
                         Next &gt;
                     </Text>
