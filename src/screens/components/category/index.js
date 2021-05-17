@@ -8,12 +8,12 @@ import math from './lists/math';
 import application from './lists/application';
 import {Close} from '../../../icons/close';
 
-export const Main = ({head, elements}) => {
+export const Main = ({title, head, elements}) => {
     return (
         <Col width="100%" margin="margin: 15px 0px;">
             <div style={{height: 30}}>
                 <Link to={`/${head}`}>
-                    <Text color="white" size="20" weight="700">{head}</Text>
+                    <Text color="white" size="20" weight="700">{title}</Text>
                 </Link>
             </div>
             {elements}
@@ -44,14 +44,14 @@ export const Category = ({categoryon, setCategoryon}) => {
             <Flex to="cursor" onClick={() => setCategoryon(false)} style={{right: 20, top: 20}} position="absolute">
                 <Close size={20} />
             </Flex>
-            <Main head="Study" elements={
+            <Main title="Study" head="study" elements={
                 <>
                     <Minor head="study" title="A.I" subhead="ai" array={ai} />
                     <Minor head="study" title="Blockchain" subhead="blockchain" array={blockchain} />
                     <Minor head="study" title="Math" subhead="math" array={math} />
                     <Minor head="study" title="Application" subhead="application" array={application} />
                 </>} />
-            <Main head="Projects" elements={
+            <Main title="Projects" head="projects" elements={
                 <>
                     <Minor head="projects" title="Object Detection" subhead="object-detection" array={ai} />
                     <Minor head="projects" title="Protocol Economy / Blockchain" subhead="protocol-economy" array={ai} />
@@ -59,13 +59,13 @@ export const Category = ({categoryon, setCategoryon}) => {
                     <Minor head="projects" title="Kaggle" subhead="kaggle" array={ai} />
                 </>
             } />
-            <Main head="Physics" elements={
+            <Main title="Physics" head="physics" elements={
                 <>
                     <Minor head="physics" title="Modern Physics" subhead="modern-physics" array={physics.modern} />
                     <Minor head="physics" title="Quantam Physics" subhead="quantam-physics" array={physics.quantam} />
                 </>
             } />
-            <Main head="Steve Ive's Theory" elements={<Minor head="steveive-theory" title="" subhead="Universial Integration" array={steveivetheory} />} />
+            <Main title="Steve Ive's Theory" head="steveive-theory" elements={<Minor head="steveive-theory" title="Steve Ive's Theory" subhead="Universial Integration" array={steveivetheory} />} />
         </Col>
     );
 };
