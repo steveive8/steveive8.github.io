@@ -1,19 +1,19 @@
 export const blockchain =  [
     {
         title: 'Mastering Bitcoin',
-        link: '/steveivespace/study/blockchain/mastering-bitcoin',
+        link: '/study/blockchain/mastering-bitcoin',
     },
     {
         title: 'Mastering Ethereum',
-        link: '/steveivespace/study/blockchain/mastering-ethereum',
+        link: '/study/blockchain/mastering-ethereum',
     },
     {
         title: 'Solidity',
-        link: '/steveivespace/study/blockchain/solidity',
+        link: '/study/blockchain/solidity',
     },
     {
         title: 'Consensus',
-        link: '/steveivespace/study/blockchain/consensus',
+        link: '/study/blockchain/consensus',
     }
 ];
 

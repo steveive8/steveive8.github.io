@@ -1,15 +1,15 @@
 export const math = [
     {
         title: 'Probability & Statics',
-        link: '/steveivespace/study/math/probability-and-statics',
+        link: '/study/math/probability-and-statics',
     },
     {
         title: 'Linear Algebra',
-        link: '/steveivespace/study/ai/linear-algebra',
+        link: '/study/ai/linear-algebra',
     },
     {
         title: 'Differentiation',
-        link: '/steveivespace/study/ai/differentiation',
+        link: '/study/ai/differentiation',
     },
 ];
 

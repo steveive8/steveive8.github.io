@@ -32,7 +32,7 @@ const Minor = ({head, array, ai}) => {
                 </Link>
             </div>
             <Col width="100%">
-                {array.map((item) => <Link to='/posts' key={item.link} margin="margin: 5px 0px;" href={item.link}><Text lh={18} size="14" weight="400" color="white">{item.title}</Text></Link>)}
+                {array.map((item) => <Link to={`/posts${item.link}`} key={item.link} margin="margin: 5px 0px;"><Text lh={18} size="14" weight="400" color="white">{item.title}</Text></Link>)}
             </Col>
             <Flex width={open ? '100%' : 0} height={'1px'} margin="margin-top: 20px" bg={"#00dcff"} style={{transition: 'all 500ms'}} />
         </Col>

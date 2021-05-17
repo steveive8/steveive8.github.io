@@ -22,7 +22,7 @@ export const Router = () => {
                     <Main />
                 </Route>
                 <Route path="/posts">
-                    <PostList page={"A.I"} contents={ai} on={true} />
+                    <PostList page={"A.I"} contents={ai} />
                 </Route>
                 <Route path="/post">
                     <Post />
