@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import {isMobile, BrowserView, MobileView, isMobileSafari} from 'react-device-detect';
-import CircleBox from '../common/circle';
-import {Width, Height} from '../../hooks/getWindow';
-import { Col, Flex, Text } from '../common/plain';
+import CircleBox from '../../components/common/circlebox';
+import {Width, Height} from '../../../hooks/getWindow';
+import { Col, Flex, Link, Text } from '../../components/common/plain';
 
 const centerX = isMobile ? Width / 2 - 90 : Width / 2 - 115
 const centerY = isMobile ? Height / 2 - 120 : Height / 2 - 180
@@ -126,9 +126,11 @@ export const Circle = ({page, setPage}) => {
                     </Col>
                 } />
                 <Flex to={'cursor'} style={{opacity: next ? 1 : 0, transition: 'all 500ms', position: 'absolute', bottom: 38, right: 38}}>
-                    <Text weight="600" onClick={() => setPage(2)}>
-                        Next &gt;
-                    </Text>
+                    <Link to='/home'>
+                        <Text weight="600" onClick={() => setPage(2)}>
+                            Next &gt;
+                        </Text>
+                    </Link>
                 </Flex>
         </Flex>
     )

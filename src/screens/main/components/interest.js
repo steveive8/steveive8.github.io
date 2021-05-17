@@ -1,10 +1,9 @@
 import React, {useState, useEffect} from 'react';
-import {Col, Row, Flex, Text, Image} from '../common/plain';
+import {Col, Row, Flex, Text, Image} from '../../components/common/plain';
 import styled from 'styled-components';
-import CircleBox from '../common/circle';
-import {isMobile} from 'react-device-detect';
-import getWindow, {Height, Width} from '../../hooks/getWindow';
-import Logo from '../../imgs/sunset.webp';
+import CircleBox from '../../components/common/circlebox';
+import getWindow from '../../../hooks/getWindow';
+import Logo from '../../../imgs/sunset.webp';
 
 const itemsize = getWindow(23, 1, 0.7);
 

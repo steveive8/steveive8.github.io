@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
-import {Col, Row, Text, Flex, Image} from '../common/plain';
-import {Height, Width} from '../../hooks/getWindow';
+import {Col, Row, Text, Flex, Image} from '../../components/common/plain';
+import {Height, Width} from '../../../hooks/getWindow';
 
 export const SteveIveSpace = ({}) => {
     return (

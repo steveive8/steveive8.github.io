@@ -1,12 +1,12 @@
 import React, {useState} from 'react';
-import { Col, Flex, Image, Row, Text } from './common/plain';
+import { Col, Flex, Image, Link as L, Row, Text } from './plain';
 import styled from 'styled-components';
 import { isMobile } from 'react-device-detect';
-import Logo from "../imgs/steveive_transparent.png";
-import GithubLogo from '../imgs/github.png';
-import Instagram from '../imgs/instagram.png'
+import Logo from "../../../imgs/steveive_transparent.png";
+import GithubLogo from '../../../imgs/github.png';
+import Instagram from '../../../imgs/instagram.png'
 
-const A = styled.a`
+const Link = styled(L)`
     color: white;
     margin: 0px 25px;
     cursor: pointer;
@@ -17,36 +17,36 @@ const A = styled.a`
     font-family: 'Avenir'
 `;
 
-const Link = styled.a`
+const A = styled.a`
     margin: 10px;
     cursor: pointer;
 `;
 
 export const Header = ({categoryon, setCategoryon}) => {
     return (
-        <Row width="100%" position="fixed" align="center" zIndex={1000}>
-            <a href="/" style={{marginTop: 5, marginLeft: 10, marginRight: 10}}>
+        <Row width="100%" position="fixed" align="center" zIndex={1000} style={{top: 0}}>
+            <Link to="/" style={{marginTop: 5, marginLeft: 10, marginRight: 10}}>
                 <Image width={180} src={Logo} />
-            </a>
-            <A>
+            </Link>
+            <Link to='/home'>
                 <Text>HOME</Text>
-            </A>
-            <A>
+            </Link>
+            <Link to='/about'>
                 <Text>ABOUT</Text>
-            </A>
-            <A onClick={()=> setCategoryon(!categoryon)}>
+            </Link>
+            <Link onClick={()=> setCategoryon(!categoryon)}>
                 <Text>WORK</Text>
-            </A>
-            <A>
+            </Link>
+            <Link to='/contact'>
                 <Text>CONTACT</Text>
-            </A>
+            </Link>
             <Row align="center" justify="flex-end" style={{flex: 1, paddingRight: 20}}>
-                <Link href="https://github.com/steveive108">
+                <A href="https://github.com/steveive8">
                     <Image width={"30px"} src={Instagram} margin="margin-top: 2px" />
-                </Link>
-                <Link href="https://github.com/steveive108">
+                </A>
+                <A href="https://github.com/steveive8">
                     <Image width={"30px"} src={GithubLogo} />
-                </Link>
+                </A>
             </Row>
         </Row>
     )

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import {Link as L} from 'react-router-dom';
 
 export const Text = styled.span`
     font-weight: ${props => props.weight};
@@ -42,7 +43,7 @@ export const Col = styled(Flex)`
     flex-direction: column;
 `;
 
-export const Link = styled.a`
+export const Link = styled(L)`
     text-decoration: none;
     ${(props) => props.margin};
     cursor: pointer;

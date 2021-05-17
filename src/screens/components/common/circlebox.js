@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react';
 import styled from 'styled-components';
 import { Flex, Text } from './plain';
-import getWindow from '../../hooks/getWindow';
+import getWindow from '../../../hooks/getWindow';
 
 const circlesize = getWindow(10, 1, 1).width;
 

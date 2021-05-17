@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flex, Col, Row, Text, Image } from '../common/plain';
+import { Flex, Col, Row, Text, Image } from '../../../components/common/plain';
 import styled from 'styled-components';
 import { BrowserView, isMobile, MobileView } from 'react-device-detect';
 

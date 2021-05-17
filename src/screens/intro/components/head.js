@@ -6,9 +6,9 @@ import {
     isMobile,
     isMobileSafari,
   } from "react-device-detect";
-import {Text, Flex, Col} from '../common/plain';
+import {Text, Flex, Col} from '../../components/common/plain';
 import styled from 'styled-components';
-import {Height, Width} from '../../hooks/getWindow';
+import {Height, Width} from '../../../hooks/getWindow';
 
 const heighter = (on, index) => {
     if (on < index) {

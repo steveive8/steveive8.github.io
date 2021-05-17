@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import {Col, Row, Text, Flex, Image, Link} from '../common/plain';
+import {Col, Row, Text, Flex, Image, Link} from '../../components/common/plain';
 
 export const Box = ({title, subtitle, src, link}) => {
     return (

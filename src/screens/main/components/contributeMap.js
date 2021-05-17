@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import { Col, Flex, Image, Row, Text } from '../common/plain';
 import CircleBox from '../common/circle';
-import {Width, Height} from '../../hooks/getWindow';
+import {Width, Height} from '../../../hooks/getWindow';
 import { BrowserView, isMobile, MobileView } from 'react-device-detect';
 
 const centerX = Width / 2
