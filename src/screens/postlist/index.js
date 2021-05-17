@@ -4,7 +4,7 @@ import Box from './components/box';
 import Post from '../post';
 import {ListViewIcon, BoxViewIcon} from '../../icons/view';
 
-export const PostList = ({page, contents}) => {
+export const PostList = ({page, contents, head, subhead}) => {
     const [array, setArray] = useState([]);
     const [listview, setListview] = useState(false);
     useEffect(() => {
@@ -35,15 +35,15 @@ export const PostList = ({page, contents}) => {
                 <Text weight="700" size="40" margin="margin-bottom: 20px;">{page}</Text>
                 <Row margin="margin-bottom: 15px">
                     <Link>
-                        <Text margin="margin-right: 10px;" weight="400" size="18" color="#00dcff">Study</Text>
-                    </Link>
-                    <Text margin="margin-right: 10px;" weight="400" size="18" color="#00dcff">></Text>
-                    <Link>
-                        <Text margin="margin-right: 10px;" weight="400" size="18" color="#00dcff">A.I</Text>
-                    </Link>
-                    <Text margin="margin-right: 10px;" weight="400" size="18" color="#00dcff">></Text>
-                    <Link>
                         <Text margin="margin-right: 10px;" weight="400" size="18" color="#00dcff">{page}</Text>
+                    </Link>
+                    {head && <Text margin="margin-right: 10px;" weight="400" size="18" color="#00dcff">></Text>}
+                    <Link>
+                        <Text margin="margin-right: 10px;" weight="400" size="18" color="#00dcff">{head}</Text>
+                    </Link>
+                    {subhead && <Text margin="margin-right: 10px;" weight="400" size="18" color="#00dcff">></Text>}
+                    <Link>
+                        <Text margin="margin-right: 10px;" weight="400" size="18" color="#00dcff">{subhead}</Text>
                     </Link>
                     <Text weight="400" size="18" color="rgb(180,180,180)">Total {contents.length} Posts</Text>
                 </Row>
