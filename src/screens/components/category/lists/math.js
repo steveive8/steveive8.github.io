@@ -1,15 +1,15 @@
 export const math = [
     {
         title: 'Probability & Statics',
-        link: '/study/math/probability-and-statics',
+        link: '/Study/Math/Probability and Statics',
     },
     {
         title: 'Linear Algebra',
-        link: '/study/ai/linear-algebra',
+        link: '/Study/Math/Linear Algebra',
     },
     {
         title: 'Differentiation',
-        link: '/study/ai/differentiation',
+        link: '/Study/Math/Differentiation',
     },
 ];
 

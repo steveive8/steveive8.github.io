@@ -1,15 +1,15 @@
 export const application = [
     {
         title: 'Frontend',
-        link: '/study/application/frontend',
+        link: '/Study/Application/Frontend',
     },
     {
         title: 'Backend',
-        link: '/study/application/backend',
+        link: '/Study/Application/Backend',
     },
     {
         title: 'React Native',
-        link: '/study/application/react-native',
+        link: '/Study/Application/React Native',
     }
 ]
 

@@ -1,7 +1,7 @@
 export const steveivetheory =  [
     {
-        title: 'Buddhism + Physics',
-        link: '/steveive-theory',
+        title: 'Physics with Buddhism',
+        link: "/Steve Ive's Theory/Universial Theory/Physics with Buddhism",
     }
 ];
 

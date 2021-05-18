@@ -1,4 +1,4 @@
-export const ai =  [
+export const projects =  [
     {
         title: 'Convolutional Neural Network',
         link: '/Study/A.I/CNN',
@@ -33,4 +33,4 @@ export const ai =  [
     },
 ];
 
-export default ai;
+export default projects;

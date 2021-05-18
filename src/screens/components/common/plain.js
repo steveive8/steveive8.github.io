@@ -14,6 +14,7 @@ export const Text = styled.span`
     ${props => props.to ? "cursor: pointer;" : null};
     ${props => props.to ? ":hover { opacity: 0.85 }" : null};
     ${props => props.us === "none" ? "user-select: none" : null};
+    ${props => props.hovercolor && `:hover { color: ${props.hovercolor}}`};
 `;
 
 export const Flex = styled.div`

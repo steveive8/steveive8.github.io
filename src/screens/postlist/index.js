@@ -34,15 +34,15 @@ export const PostList = ({page, contents, head, subhead}) => {
                 <Changer listview={listview} setListview={setListview} />
                 <Text weight="700" size="40" margin="margin-bottom: 20px;">{page}</Text>
                 <Row margin="margin-bottom: 15px">
-                    <Link>
+                    <Link to={`/${page}`}>
                         <Text margin="margin-right: 10px;" weight="400" size="18" color="#00dcff">{page}</Text>
                     </Link>
                     {head && <Text margin="margin-right: 10px;" weight="400" size="18" color="#00dcff">></Text>}
-                    <Link>
+                    <Link to={`/${page}/${head}`}>
                         <Text margin="margin-right: 10px;" weight="400" size="18" color="#00dcff">{head}</Text>
                     </Link>
                     {subhead && <Text margin="margin-right: 10px;" weight="400" size="18" color="#00dcff">></Text>}
-                    <Link>
+                    <Link to={`/${page}/${head}/${subhead}`}>
                         <Text margin="margin-right: 10px;" weight="400" size="18" color="#00dcff">{subhead}</Text>
                     </Link>
                     <Text weight="400" size="18" color="rgb(180,180,180)">Total {contents.length} Posts</Text>

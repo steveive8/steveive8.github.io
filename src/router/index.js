@@ -1,12 +1,13 @@
 import React, {useState} from 'react';
-import Intro from './screens/intro';
-import Header from './screens/components/common/header';
-import Main from './screens/main';
-import Post from './screens/post';
-import PostList from './screens/postlist';
+import Intro from '../screens/intro';
+import Header from '../screens/components/common/header';
+import Main from '../screens/main';
+import Post from '../screens/post';
+import PostList from '../screens/postlist';
 import {Switch, Route, useLocation} from 'react-router-dom';
-import Category from './screens/components/category';
-import ai from './contents/ai';
+import Category from '../screens/components/category';
+import ai from '../contents/ai';
+import blockchain from '../contents/blockchain';
 
 export const Router = () => {
     const [categoryon, setCategoryon] = useState(false);
@@ -23,23 +24,26 @@ export const Router = () => {
                 <Route path="/home">
                     <Main />
                 </Route>
-                <Route path="/study">
-                    <PostList page={"Study"} head={id[2]} subhead={id[3]} contents={ai} />
+                <Route path="/about">
+                    <Main />
                 </Route>
-                <Route path="/physics">
-                    <PostList page={"Physics"} head={id[2]} subhead={id[3]} contents={ai} />
+                <Route path="/contact">
+                    <Main />
                 </Route>
-                <Route path="/projects">
-                    <PostList page={"Projects"} head={id[2]} subhead={id[3]} contents={ai} />
+                <Route path={`/${id[1]}`}>
+                    <PostList page={id[1]} head={id[2]} subhead={id[3]} contents={ai} />
                 </Route>
-                <Route path="/steveive-theory">
-                    <PostList page={"Steve Ive's Theory"} head={id[2]} subhead={id[3]} contents={ai} />
+                <Route path={`/${id[1]}/${id[2]}`}>
+                    <PostList page={id[1]} head={id[2]} subhead={id[3]} contents={ai} />
                 </Route>
                 <Route path={`/${id[1]}/${id[2]}/${id[3]}`}>
                     <PostList page={id[1]} head={id[2]} subhead={id[3]} contents={ai} />
                 </Route>
                 <Route path="/post">
                     <Post />
+                </Route>
+                <Route>
+                    <Main />
                 </Route>
             </Switch>
         </div>
