@@ -1,18 +1,23 @@
-import React, {useState} from 'react';
-import styled from 'styled-components';
-import {Col, Row, Text, Flex} from '../components/common/plain';
+import React from 'react';
+import {Col, Row, Flex, Text, CirclePic} from '../components/plain';
+import ReactMarkdown from 'react-markdown';
+const gfm = require('remark-gfm');
 
-export const Post = ({title, content, date, listview}) => {
+export const Post = ({content = {date: '2021.07.04', title: 'Hello', markdown: `Just a link: https://reactjs.com.`}}) => {
     return (
-        <Col to="cursor" width={listview ? '95.8%' : "100%"} padding={!listview && "padding: 100px 15%"} margin={listview && 'margin: 20px;'} height={"100%"} style={{maxHeight: listview ? 400 : 'auto'}} bg="rgb(3,5,8)">
-            <Row align="center" justify="space-between" margin="margin: 15px 0px;">
-                <Text size="20" weight="500">Steve Ive</Text>
-                <Text size="17" weight="400">{date}</Text>
+        <div style={{position: 'fixed', width: '100vw', height: '100vh', padding: '15%', paddingTop: '10%'}}>
+           <Col>
+            <Row align="center" justify="space-between" margin="margin: 10px 0px;">
+                <CirclePic />
+                <Text>{content.date}</Text>
             </Row>
-            <Text margin="margin-bottom: 20px" weight="700" size="30">{title}</Text>
-            {content}
-        </Col>
-    );
-};
+            <Text weight="700" size="30">{content.title}</Text>
+            <Flex margin="margin-top: 30px;">
+                <ReactMarkdown remarkPlugins={[gfm]} children={content.markdown} />
+            </Flex>
+           </Col>
+        </div>
+    )
+}
 
 export default Post;

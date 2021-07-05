@@ -34,7 +34,7 @@ export default createGlobalStyle`
     }
     a {
         text-decoration: none;
-        color: black;
+        color: white;
     }
     input {
         border: 0;
@@ -54,6 +54,6 @@ export default createGlobalStyle`
     }
     ::-webkit-scrollbar-thumb {
         border-radius: 10px;
-        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
     }
 `;
