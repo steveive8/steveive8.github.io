@@ -34,7 +34,7 @@ export default createGlobalStyle`
     }
     a {
         text-decoration: none;
-        color: black;
+        color: white;
     }
     input {
         border: 0;
@@ -54,9 +54,30 @@ export default createGlobalStyle`
     }
     ::-webkit-scrollbar-thumb {
         border-radius: 10px;
-        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+    }
+    .jupyter {
+        strong {
+            font-weight: 500;
+        }
+        h1 {
+            font-size: 30px;
+        }
+        h2 {
+            font-size: 28px;
+            margin: 10px 0px;
+        }
+        p {
+            line-height: 22px;
+            font-size: 15px;
+        }
+        blockquote {
+            margin: 10px 0px;
+        }
+        ul {
+            margin: 10px 0px;
+            list-style: disc;
+            line-height: 22px;
+        }
     }
 `;
-//        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif, 'telegrafico';
-//        -webkit-font-smoothing: antialiased;
-//-moz-osx-font-smoothing: grayscale;
