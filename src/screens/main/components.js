@@ -20,9 +20,7 @@ export const Star = ({x, y, size, src, blinks}) => {
     return (
         <Flex to="hover" position="absolute" style={{left: `${x}%`, top: `${y}%`}} align="center" justify="center" size="23px">
             <StarWrap blinks={blinks} position="absolute" style={{left: -23, top: -23}} size={1}></StarWrap>
-            <StarWrap blinks={blinks} position="absolute"style={{left: 23, top: 23}} size={1}></StarWrap>
-            <StarWrap blinks={blinks} position="absolute" style={{right: -23, top: -23}} size={1}></StarWrap>
-            <StarWrap blinks={blinks} position="absolute"style={{right: 23, top: 23}} size={1}></StarWrap>
+            <StarWrap blinks={blinks} position="absolute" style={{right: -50, top: -23}} size={1}></StarWrap>
             <StarWrap blinks={blinks} size={size}>
 
             </StarWrap>

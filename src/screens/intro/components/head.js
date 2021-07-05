@@ -87,15 +87,7 @@ export const Fade = ({on, siderOn, headerText, siderText, index}) => {
 export const Head = ({page, setPage}) => {
     const [on, setOn] = useState(0);
     const [siderOn, setSiderOn] = useState(0);
-    const [position, setPosition] = useState(0);
     useEffect(() => {
-        if (page !== 0) {
-            return setTimeout(() => {
-                setPosition(Height);
-            }, 1000);
-        } else {
-            setPosition(0);
-        }
         const animate = () => {
             on === 0 && setTimeout(() => {
                 setOn(1);
@@ -149,7 +141,7 @@ export const Head = ({page, setPage}) => {
         },
     ]
     return (
-        <Flex width='100%' height={isMobileSafari ? "90vh" : "100vh"} align="center" justify="center" style={{position: 'fixed', top: position, opacity: page === 0 ? 1 : 0, overflow: 'hidden', transition: 'opacity 1s'}}>
+        <Flex width='100%' height={isMobileSafari ? "90vh" : "100vh"} align="center" justify="center" style={{position: 'fixed', opacity: page === 0 ? 1 : 0, overflow: 'hidden', transition: 'opacity 1s'}}>
             {contents.map((item, index) => <Fade key={index} on={on} siderOn={siderOn} index={index + 1} bottom={-Height} headerText={item.header} siderText={item.sider} />)}
         </Flex>
     )

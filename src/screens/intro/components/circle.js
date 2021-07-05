@@ -8,22 +8,8 @@ import { Col, Flex, Link, Text } from '../../components/plain';
 const centerX = isMobile ? Width / 2 - 90 : Width / 2 - 115
 const centerY = isMobile ? Height / 2 - 120 : Height / 2 - 180
 
-export const Circle = ({page, setPage}) => {
-    const [position, setPosition] = useState(Height);
+export const Circle = ({page}) => {
     const [hover, setHover] = useState(1);
-    const [next, setNext] = useState(false);
-    useEffect(() => {
-        page === 1 && !next && setTimeout(() => {
-            setNext(true)
-        }, 3000);
-    });
-    useEffect(() => {
-        if (page === 1){
-            setPosition(0);
-        } else {
-            setPosition(Height);
-        };
-    }, [page]);
     const hoverer = (index, bool) => {
         if (bool){
             setHover(index);
@@ -75,7 +61,7 @@ export const Circle = ({page, setPage}) => {
         }
     ]
     return (
-        <Flex style={{width: '100vw', height: isMobileSafari ? '80vh' : '100vh', position: 'fixed', overflow: 'hidden', opacity: page === 1 ? 1 : 0, transition: 'opacity 1s', top: position}}>
+        <Flex style={{width: '100vw', height: isMobileSafari ? '80vh' : '100vh', position: 'fixed', overflow: 'hidden', opacity: page === 1 ? 1 : 0, transition: 'opacity 1s'}}>
             <CircleBox page={page} circles={circles} height={'100%'} />
             <Description 
                 hover={hover} 
