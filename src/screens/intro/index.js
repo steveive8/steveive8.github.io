@@ -8,7 +8,6 @@ export const Intro = ({page, setPage}) => {
         <div style={{width: '100wh', height: '100vh', overflow: 'hidden'}}>
             <Head page={page} setPage={setPage} />
             <Circle page={page} setPage={setPage} />
-
             <Flex to={'cursor'} style={{position: 'absolute', bottom: 38, right: 38}}>
                 <Link to='/main'>
                     <Text weight="600" onClick={() => setPage(2)}>
@@ -16,7 +15,6 @@ export const Intro = ({page, setPage}) => {
                     </Text>
                 </Link>
             </Flex>
-            
         </div>
     )
 }

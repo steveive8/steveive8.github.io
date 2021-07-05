@@ -4,6 +4,7 @@ import CircleBox from './circlebox';
 import {Width, Height} from '../../../hooks/getWindow';
 import { Col, Flex, Link, Text } from '../../components/plain';
 
+
 const centerX = isMobile ? Width / 2 - 90 : Width / 2 - 115
 const centerY = isMobile ? Height / 2 - 120 : Height / 2 - 180
 
