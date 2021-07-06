@@ -11,7 +11,7 @@ export const Router = () => {
     useEffect(() => {
         const renderer = () => {
             if(page === 2) {
-                return setTimeout(() => setPage(3), 3000);
+                return setTimeout(() => setPage(3), 1500);
             }
         };
         renderer();
