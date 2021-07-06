@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useState, useEffect} from 'react';
 import {Flex, Text, Image} from '../components/plain';
 import {Star} from './components';
 import {stars} from './stars';

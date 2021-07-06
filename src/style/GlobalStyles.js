@@ -34,7 +34,8 @@ export default createGlobalStyle`
     }
     a {
         text-decoration: none;
-        color: white;
+        color: #00dcff;
+        cursor: pointer;
     }
     input {
         border: 0;
@@ -60,24 +61,43 @@ export default createGlobalStyle`
         strong {
             font-weight: 500;
         }
-        h1 {
-            font-size: 30px;
-        }
-        h2 {
-            font-size: 28px;
-            margin: 10px 0px;
-        }
         p {
             line-height: 22px;
             font-size: 15px;
+        }
+        h2 {
+            line-height: 22px;
         }
         blockquote {
             margin: 10px 0px;
         }
         ul {
-            margin: 10px 0px;
+            margin: 15px;
             list-style: disc;
             line-height: 22px;
         }
+    }
+    .jupyter-viewer {
+        position: relative;
+        left: -2.5%;
+    }
+    .block .block-light {
+        width: 2px;
+        margin: 0 5px 0 0;
+        border-radius: 2px;
+        background-color: #00dcff;
+        opacity: 0;
+        :hover {
+            opacity: 1;
+            cursor: pointer;
+            background-color: #00dcff;
+        }
+    }
+    .block .block-light-selected {
+        width: 2px;
+        margin: 0 5px 0 0;
+        border-radius: 2px;
+        background-color: #00dcff;
+        cursor: pointer;
     }
 `;

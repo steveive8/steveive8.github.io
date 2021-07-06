@@ -4,7 +4,7 @@ import logo from '../../imgs/steveivespacelogo.png';
 
 export const Header = ({setPage, page}) => {
     return (
-        <Row onClick={() => setPage(2)} align="center" justify="flex-start" position="fixed" width="100%" padding="padding: 20px;" zIndex={1000} bg="rgba(0,0,0,0)" style={{opacity: page >= 3 ? 1 : 0, left: page === 3 ? 0 : 100, transition: 'all 700ms'}}>
+        <Row onClick={() => setPage(2)} align="center" justify="flex-start" position="fixed" width="100%" padding="padding: 20px;" zIndex={1000} style={{opacity: page >= 3 ? 1 : 0, left: page >= 3 ? 0 : '10%', transition: 'all 700ms'}}>
             <Link to='/'>
                 <Image src={logo} height="40px" />
             </Link>

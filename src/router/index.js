@@ -7,7 +7,7 @@ import {Text, Flex} from '../screens/components/plain';
 import Header from '../screens/components/header';
 
 export const Router = () => {
-    const [page, setPage] = useState(0);
+    const [page, setPage] = useState(5);
     useEffect(() => {
         const renderer = () => {
             if(page === 2) {
