@@ -32,10 +32,11 @@ export const DockBar = ({scroll, category, setCategory}) => {
 export default DockBar;
 
 export const Icon = ({src, title}) => {
+    const [hover, setHover] = useState(false);
     return (
-        <Col to="cursor" br="50%" align="center" width="125px" justify="center" height="65px" zIndex={1000}>
+        <Col onMouseOver={() => setHover(true)} onMouseOut={() => setHover(false)} to="cursor" br="50%" align="center" width="125px" justify="center" height={hover ? "72px" : "65px"} zIndex={1000}>
             {src}
-            <Text style={{textAlign: 'center', marginLeft: title === "Home" ? 5 : 0}} lh={17} margin="margin-top: 8px" weight="500" size="14">{title}</Text>
+            <Text style={{textAlign: 'center', marginLeft: title === "Home" ? 5 : 0, transition: 'all 500ms'}} lh={17} margin={`margin-top: ${hover ? 3 : 8}px`} weight="500" size="14">{title}</Text>
         </Col>
     )
 }
