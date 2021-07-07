@@ -100,4 +100,18 @@ export default createGlobalStyle`
         background-color: #00dcff;
         cursor: pointer;
     }
+    .description {
+        h1 {
+            font-weight: 500;
+            font-size: 30px;
+            margin: 10px 0;
+        }
+        p, ul {
+            line-height: 28px;
+        }
+        li {
+            list-style-type: disc;
+            margin-left: 18px;
+        }
+    }
 `;
