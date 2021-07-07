@@ -28,3 +28,5 @@ export const Star = ({x, y, size, src, blinks}) => {
 
     )
 }
+
+//            <StarWrap blinks={blinks} position="absolute" style={{right: -50, top: -23}} size={1}></StarWrap>
