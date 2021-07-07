@@ -11,7 +11,7 @@ export const DockBar = ({scroll, category, setCategory}) => {
             <Col width="100%" align="center" justify="center">
                 <Row width="90%" align="flex-end" justify="space-around" position="absolute" style={{bottom: 10}} zIndex={100000}>
                     <Icon title="Home" src={<SteveIve height="100%" />} />
-                    <Icon title="Deep Learning" src={<AI height="100%" />} />
+                    <Icon title="A.I" src={<AI height="100%" />} />
                     <Icon title="Blockchain" src={<Blockchain height="100%" />} />
                     <Icon title="Relativity" src={<Relativity height="100%" />} />
                     <Icon title="Quantaum" src={<Quantaum height="100%" />} />
