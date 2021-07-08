@@ -5,12 +5,12 @@ import JupyterViewer from "react-jupyter-notebook";
 
 const gfm = require('remark-gfm');
 
-export const Post = ({content = {jupyter: true, date: '2021.07.04', title: 'Chap 2-4: Perceptron to Training Neural Network', markdown: `Just a link: https://reactjs.com.`}}) => {
+export const Post = ({content = {type: 'jupyter', date: '2021.07.04', title: 'Chap 2-4: Perceptron to Training Neural Network', markdown: `Just a link: https://reactjs.com.`}}) => {
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
     const [data, setData] = useState([]);
     useEffect(() => {
-      content.jupyter && fetch('https://raw.githubusercontent.com/steveive8/Study-Deep-Learning-from-scratch/main/Chap%202-4%3A%20Perceptron_to_Training_Neural_Network.ipynb')
+      content.type === 'jupyter' && fetch('https://raw.githubusercontent.com/steveive8/Study-Deep-Learning-from-scratch/main/Chap%202-4%3A%20Perceptron_to_Training_Neural_Network.ipynb')
         .then(res => res.json())
         .then(
           (result) => {
@@ -23,7 +23,7 @@ export const Post = ({content = {jupyter: true, date: '2021.07.04', title: 'Chap
             setError(error);
           }
         )
-    }, [content.jupyter])
+    }, [content.type])
     useEffect(() => {
         const styler = () => {
             const h2s = document.querySelectorAll('h2');
@@ -50,8 +50,8 @@ export const Post = ({content = {jupyter: true, date: '2021.07.04', title: 'Chap
               }
             }
         }
-        content.jupyter && styler();
-    }, [content.jupyter, isLoaded])
+        content.type === 'jupyter' && styler();
+    }, [content.type, isLoaded])
     console.log(data);
     return (
         <div className="post" style={{position: 'fixed', width: '100vw', padding: '15%', paddingTop: '10%', height: '100%', overflowY: 'scroll'}}>
@@ -65,7 +65,7 @@ export const Post = ({content = {jupyter: true, date: '2021.07.04', title: 'Chap
                 </Row>
                 <Text weight="700" size="30">{content.title}</Text>
               </Col>
-              {content.jupyter ?
+              {content.type === 'jupyter' ?
                   <div className="jupyter" style={{marginTop: 30}}>
                       <JupyterViewer codeBlockStyles={{hljsStyle: "stackoverflowDark"}} rawIpynb={data} />
                   </div> : <ReactMarkdown remarkPlugins={[gfm]} children={content.markdown} />}

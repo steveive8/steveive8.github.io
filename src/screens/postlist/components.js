@@ -6,14 +6,16 @@ const gfm = require('remark-gfm');
 
 export const Top = ({category}) => {
     return (
-        <Row>
+        <Row padding="padding: 10%; padding-bottom: 0; padding-right: 5%">
             <Col className="description" flex={3}>
                 <ReactMarkdown remarkPlugins={[gfm]} children={category.markdown} />
                 <Flex margin="margin-top: 20px;">
                     {category.hashtags.map((item) => <Hashtag key={item.name} name={item.name} />)}
                 </Flex>
             </Col>
-            <Image flex={1} src={category.image} />
+            <Flex flex={1}>
+                <Image width="90%" of="contain" style={category.imageStyle} src={category.image} />
+            </Flex>
         </Row>
     )
 }
