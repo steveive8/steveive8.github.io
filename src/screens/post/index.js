@@ -5,12 +5,13 @@ import JupyterViewer from "react-jupyter-notebook";
 
 const gfm = require('remark-gfm');
 
-export const Post = ({content = {type: 'jupyter', date: '2021.07.04', title: 'Chap 2-4: Perceptron to Training Neural Network', markdown: `Just a link: https://reactjs.com.`}}) => {
+export const Post = ({content}) => {
+  console.log(content);
     const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
     const [data, setData] = useState([]);
     useEffect(() => {
-      content.type === 'jupyter' && fetch('https://raw.githubusercontent.com/steveive8/Study-Deep-Learning-from-scratch/main/Chap%202-4%3A%20Perceptron_to_Training_Neural_Network.ipynb')
+      content.type === 'jupyter' && fetch(content.src)
         .then(res => res.json())
         .then(
           (result) => {
@@ -61,7 +62,7 @@ export const Post = ({content = {type: 'jupyter', date: '2021.07.04', title: 'Ch
               <Col padding="padding: 0 7%">
                 <Row align="center" justify="space-between" margin="margin-bottom: 30px;">
                     <CirclePic />
-                    <Text>{content.date}</Text>
+                    <Text>{content.date ? content.date : ''}</Text>
                 </Row>
                 <Text weight="700" size="30">{content.title}</Text>
               </Col>
