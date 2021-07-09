@@ -1,3 +1,5 @@
+import blockchainimage from '../../imgs/blockchain.jfif';
+
 const string = `
 # Blockchain
 
@@ -19,7 +21,7 @@ Thanks 😁`
 
 export const blockchain_main = {
     markdown: string,
-    image: null,
+    image: blockchainimage,
     imageStyle: {marginBottom: 40},
     hashtags: [
         {

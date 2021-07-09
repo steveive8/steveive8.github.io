@@ -1,3 +1,5 @@
+import relativityimage from '../../imgs/spacetime.jpg';
+
 const string = `
 # Relativity Theory
 
@@ -19,7 +21,7 @@ Thanks 😁`
 
 export const relativity_main = {
     markdown: string,
-    image: null,
+    image: relativityimage,
     imageStyle: {marginBottom: 40},
     hashtags: [
         {

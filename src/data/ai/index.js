@@ -1,3 +1,5 @@
+import aiimage from '../../imgs/deep.jpg';
+
 const string = `
 # Artificial Intelligence
 
@@ -19,7 +21,7 @@ Thanks 😁`
 
 export const ai_main = {
     markdown: string,
-    image: null,
+    image: aiimage,
     imageStyle: {marginBottom: 40},
     hashtags: [
         {

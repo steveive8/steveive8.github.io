@@ -1,3 +1,5 @@
+import quantaumimage from '../../imgs/quantaum.jfif';
+
 const string = `
 # Quantaum Physics
 
@@ -19,7 +21,7 @@ Thanks 😁`
 
 export const quantaum_main = {
     markdown: string,
-    image: null,
+    image: quantaumimage,
     imageStyle: {marginBottom: 40},
     hashtags: [
         {

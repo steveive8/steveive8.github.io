@@ -27,7 +27,7 @@ Thanks 😁`
 export const main = {
     markdown: string,
     image: Buddha,
-    imageStyle: {marginBottom: 40},
+    imageStyle: {marginBottom: 40, width: '70%'},
     hashtags: [
         {
             name: 'iOS', 

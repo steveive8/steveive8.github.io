@@ -7,14 +7,14 @@ const gfm = require('remark-gfm');
 export const Top = ({main}) => {
     return (
         <Row padding="padding: 10%; padding-bottom: 0;">
-            <Col className="description" flex={3}>
+            <Col className="description" flex={2}>
                 <ReactMarkdown remarkPlugins={[gfm]} children={main.markdown} />
                 <Flex margin="margin-top: 20px;">
                     {main.hashtags.map((item) => <Hashtag key={item.name} name={item.name} />)}
                 </Flex>
             </Col>
-            <Flex flex={1}>
-                <Image width="90%" of="contain" style={main.imageStyle} src={main.image} />
+            <Flex flex={1} justify="flex-end">
+                <Image width="100%" of="contain" style={main.imageStyle} src={main.image} />
             </Flex>
         </Row>
     )
