@@ -31,7 +31,7 @@ export const Post = ({content}) => {
             const ps = document.querySelectorAll('p');
             for(let i = 0; i < h2s.length; i++){
               if(h2s[i].innerText.includes('##')){
-                h2s[i].style = 'font-size: 25px; display: block; font-weight: 600; margin: 10px 0;'
+                h2s[i].style = 'font-size: 25px; display: block; font-weight: 600; margin: 10px 0; line-height: 30px;'
                 h2s[i].innerText = h2s[i].innerText.replaceAll('#', '')
               } else if(h2s[i].innerText.includes('#')){
                 h2s[i].style = 'font-size: 30px; display: block; font-weight: 600; margin: 15px 0;'
@@ -43,7 +43,7 @@ export const Post = ({content}) => {
                 ps[i].style = 'font-size: 18px; display: block; font-weight: 600; margin: 10px 0;'
                 ps[i].innerText = ps[i].innerText.replaceAll('#', '')
               } else if(ps[i].innerText.includes('##')){
-                ps[i].style = 'font-size: 25px; display: block; font-weight: 600; margin: 10px 0;'
+                ps[i].style = 'font-size: 25px; display: block; font-weight: 600; margin: 10px 0; line-height: 30px'
                 ps[i].innerText = ps[i].innerText.replaceAll('#', '')
               } else if(ps[i].innerText.includes('#')){
                 ps[i].style = 'font-size: 30px; display: block; font-weight: 600; margin: 15px 0;'
@@ -59,7 +59,7 @@ export const Post = ({content}) => {
            {error ? <Text>Error: {error.message}</Text> :
            !isLoaded ? <Text>Loading...</Text> : 
            <>
-              <Col padding="padding: 0 7%">
+              <Col width="100%" padding="padding-left: 50px">
                 <Row align="center" justify="space-between" margin="margin-bottom: 30px;">
                     <CirclePic />
                     <Text>{content.date ? content.date : ''}</Text>

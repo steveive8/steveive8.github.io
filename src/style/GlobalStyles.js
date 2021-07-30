@@ -66,12 +66,13 @@ export default createGlobalStyle`
             font-size: 15px;
         }
         h2 {
-            line-height: 22px;
+            line-height: 30px;
         }
         blockquote {
             margin: 10px 0px;
+            line-height: 20px;
         }
-        ul {
+        ul, ol {
             margin: 15px;
             list-style: disc;
             line-height: 22px;
@@ -99,6 +100,9 @@ export default createGlobalStyle`
         border-radius: 2px;
         background-color: #00dcff;
         cursor: pointer;
+    }
+    .block .cell-row .cell-content.output-std {
+        line-height: 20px;
     }
     .description {
         h1 {

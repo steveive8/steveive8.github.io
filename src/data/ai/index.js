@@ -94,7 +94,7 @@ export const ai = [
         type: 'jupyter',
         src: 'https://raw.githubusercontent.com/steveive8/Alzheimer-Analysis-by-MLE/main/Research%20for%20bivariate%20and%20univariate%20MLE%20between%20Brain%20Diseases.ipynb',
         project: 'Brain Diesease Analysis: Alzheimer',
-        title: 'Alzheimer Analysis by Maximum Liklihood Estimation',
+        title: "Alzheimer's Disease Analysis by Maximum Liklihood Estimation",
         folder: 'ai-02',
         github: 'https://github.com/steveive8/Alzheimer-Analysis-by-MLE',
         hashtags: [
@@ -120,7 +120,7 @@ export const ai = [
         type: 'jupyter',
         src: 'https://raw.githubusercontent.com/steveive8/Brain-Diseases-Classifier-ML/main/Research%20for%20Machine%20Learning%20Methods%20for%20Classification%20of%20Brain%20Diseases.ipynb',
         project: 'Brain Diesease Analysis: Alzheimer',
-        title: 'Optimizing Alzheimer Classifier by various Machine Learning Models',
+        title: "Classifying Alzheimer's Disease with Multiple Machine Learning Models",
         folder: 'ai-02',
         github: 'https://github.com/steveive8/Brain-Diseases-Classifier-ML',
         hashtags: [

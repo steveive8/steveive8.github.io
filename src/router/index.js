@@ -17,7 +17,7 @@ import DockBar from '../screens/components/dockbar';
 
 
 export const Router = () => {
-    const [page, setPage] = useState(6);
+    const [page, setPage] = useState(0);
     const [hashtag, setHashtag] = useState(null);
     const [id, setId] = useState('A.I');
     const [content, setContent] = useState(data[id])
