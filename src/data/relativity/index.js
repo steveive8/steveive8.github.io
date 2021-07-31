@@ -23,23 +23,7 @@ export const relativity_main = {
     markdown: string,
     image: relativityimage,
     imageStyle: {marginBottom: 40},
-    hashtags: [
-        {
-            name: 'iOS', 
-        },
-        {
-            name: 'Android', 
-        },
-        {
-            name: 'React Native', 
-        },
-        {
-            name: 'React.js', 
-        },
-        {
-            name: 'Web'
-        },
-    ],
+    hashtags: [],
 };
 
 export const relativity = [];

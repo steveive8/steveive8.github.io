@@ -28,23 +28,7 @@ export const main = {
     markdown: string,
     image: Buddha,
     imageStyle: {marginBottom: 40, width: '70%'},
-    hashtags: [
-        {
-            name: 'iOS', 
-        },
-        {
-            name: 'Android', 
-        },
-        {
-            name: 'React Native', 
-        },
-        {
-            name: 'React.js', 
-        },
-        {
-            name: 'Web'
-        },
-    ],
+    hashtags: ['iOS', 'Android', 'React Native', 'React.js', 'Web']
 };
 
 export const about = ai.concat(blockchain).concat(quantaum).concat(relativity).concat(dev)

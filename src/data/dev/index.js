@@ -21,23 +21,7 @@ export const dev_main = {
     markdown: string,
     image: null,
     imageStyle: {marginBottom: 40},
-    hashtags: [
-        {
-            name: 'iOS', 
-        },
-        {
-            name: 'Android', 
-        },
-        {
-            name: 'React Native', 
-        },
-        {
-            name: 'React.js', 
-        },
-        {
-            name: 'Web'
-        },
-    ],
+    hashtags: [],
 };
 
 export const dev = [];

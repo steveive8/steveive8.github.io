@@ -23,23 +23,7 @@ export const blockchain_main = {
     markdown: string,
     image: blockchainimage,
     imageStyle: {marginBottom: 40},
-    hashtags: [
-        {
-            name: 'iOS', 
-        },
-        {
-            name: 'Android', 
-        },
-        {
-            name: 'React Native', 
-        },
-        {
-            name: 'React.js', 
-        },
-        {
-            name: 'Web'
-        },
-    ],
+    hashtags: [],
 };
 
 export const blockchain = [

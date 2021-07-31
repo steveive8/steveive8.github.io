@@ -13,7 +13,7 @@ export const PostList = ({setPage, id, content, setMainContent}) => {
                 return setPost(null);
             }
             for(let i = 0; i < content.posts.length; i++){
-                if(flag === 2){
+                if(flag === 4){
                     postlists.push(
                         <Row>
                             {content.posts.slice(index, index + flag).map((item) => 
@@ -21,7 +21,7 @@ export const PostList = ({setPage, id, content, setMainContent}) => {
                             )}
                         </Row>
                     )
-                    index = index + 2;
+                    index = index + 4;
                     flag = 3;
                 } else {
                     postlists.push(
@@ -32,7 +32,7 @@ export const PostList = ({setPage, id, content, setMainContent}) => {
                         </Row>
                     );
                     index = index + 3;
-                    flag = 2;
+                    flag = 4;
                 }
             }
             setPost(postlists);

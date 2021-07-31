@@ -1,3 +1,4 @@
+import deeplearningzerotoall2 from './deeplearningzerotoall2';
 import aiimage from '../../imgs/deep.jpg';
 
 const string = `
@@ -23,26 +24,10 @@ export const ai_main = {
     markdown: string,
     image: aiimage,
     imageStyle: {marginBottom: 40},
-    hashtags: [
-        {
-            name: 'iOS', 
-        },
-        {
-            name: 'Android', 
-        },
-        {
-            name: 'React Native', 
-        },
-        {
-            name: 'React.js', 
-        },
-        {
-            name: 'Web'
-        },
-    ],
+    hashtags: ['iOS', 'Android', 'React Native', 'React.js', 'Web']
 };
 
-export const ai = [
+const ai_ = [
     {
         id: 0,
         type: 'jupyter',
@@ -51,20 +36,8 @@ export const ai = [
         title: 'Deep Learning From Scratch Ch01 - 04',
         folder: 'ai-01',
         github: 'https://github.com/steveive8/Study-Deep-Learning-from-scratch',
-        hashtags: [
-            {
-                name: 'Deep Learning'
-            },
-            {
-                name: 'Deep Learning From Scratch'
-            },
-            {
-                name: 'jupyter'
-            },
-            {
-                name: 'study'
-            }
-        ]
+        hashtags: ['Deep Learning', 'Deep Learning From Scratch', 'jupyter', 'study']
+
     },
     {
         id: 1,
@@ -74,73 +47,31 @@ export const ai = [
         title: 'Deep Learning From Scratch Ch05 - 08',
         folder: 'ai-01',
         github: 'https://github.com/steveive8/Study-Deep-Learning-from-scratch',
-        hashtags: [
-            {
-                name: 'Deep Learning'
-            },
-            {
-                name: 'Deep Learning From Scratch'
-            },
-            {
-                name: 'jupyter'
-            },
-            {
-                name: 'study'
-            },
-        ]
+        hashtags: ['Deep Learning', 'Deep Learning From Scratch', 'jupyter', 'study']
     },
     {
         id: 2,
         type: 'jupyter',
         src: 'https://raw.githubusercontent.com/steveive8/Alzheimer-Analysis-by-MLE/main/Research%20for%20bivariate%20and%20univariate%20MLE%20between%20Brain%20Diseases.ipynb',
         project: 'Brain Diesease Analysis: Alzheimer',
-        title: "Alzheimer's Disease Analysis by Maximum Liklihood Estimation",
+        title: "Research for bivariate and univariate MLE between Brain Diseases",
         folder: 'ai-02',
         github: 'https://github.com/steveive8/Alzheimer-Analysis-by-MLE',
-        hashtags: [
-            {
-                name: 'Brain Disease Analysis'
-            },
-            {
-                name: 'Deep Learning'
-            },
-            {
-                name: 'Alzheimer-Analysis-by-MLE',
-            },
-            {
-                name: 'Alzheimer',
-            },
-            {
-                name: 'jupyter'
-            }
-        ]
+        hashtags: ['Brain Disease Analysis', 'Deep Learning', 'Alzheimer-Analysis-by-MLE', 'Alzheimer', 'jupyter']
     },
     {
         id: 3,
         type: 'jupyter',
         src: 'https://raw.githubusercontent.com/steveive8/Brain-Diseases-Classifier-ML/main/Research%20for%20Machine%20Learning%20Methods%20for%20Classification%20of%20Brain%20Diseases.ipynb',
         project: 'Brain Diesease Analysis: Alzheimer',
-        title: "Classifying Alzheimer's Disease with Multiple Machine Learning Models",
+        title: "Research for Machine Learning Methods for Classification of Brain Diseases",
         folder: 'ai-02',
         github: 'https://github.com/steveive8/Brain-Diseases-Classifier-ML',
-        hashtags: [
-            {
-                name: 'Brain Disease Analysis'
-            },
-            {
-                name: 'Deep Learning'
-            },
-            {
-                name: 'Brain-Diseases-Classifier-ML',  
-            },
-            {
-                name: 'Alzheimer',
-            },
-            {
-                name: 'jupyter'
-            }
-        ]
+        hashtags: ['Brain Disease Analysis', 'Deep Learning', 'Alzheimer-Analysis-by-MLE', 'Alzheimer', 'jupyter']
+
     },
 ]
+
+export const ai = ai_.concat(deeplearningzerotoall2)
 
 export default ai;

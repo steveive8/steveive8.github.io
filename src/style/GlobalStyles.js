@@ -57,7 +57,8 @@ export default createGlobalStyle`
         border-radius: 10px;
         -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
     }
-    .jupyter {
+    .jupyter, .readme {
+        line-height: 20px;
         strong {
             font-weight: 500;
         }
@@ -65,12 +66,28 @@ export default createGlobalStyle`
             line-height: 22px;
             font-size: 15px;
         }
+        h1 {
+            font-size: 30px; 
+            display: block; 
+            font-weight: 500; 
+            line-height: 32px;
+            margin: 25px 0;
+        }
         h2 {
+            font-size: 22px; 
+            display: block; 
+            font-weight: 500;
+            margin: 12.5px 0;
             line-height: 30px;
+        }
+        h3 {
+            font-size: 18px; 
+            display: block; 
+            font-weight: 500;
+             margin: 10px 0;
         }
         blockquote {
             margin: 10px 0px;
-            line-height: 20px;
         }
         ul, ol {
             margin: 15px;
@@ -102,12 +119,13 @@ export default createGlobalStyle`
         cursor: pointer;
     }
     .block .cell-row .cell-content.output-std {
-        line-height: 20px;
+        line-height: 25px;
+        letter-spacing: 0.3px;
     }
     .description {
         h1 {
             font-weight: 500;
-            font-size: 30px;
+            font-size: 28px;
             margin: 10px 0;
         }
         p, ul {
