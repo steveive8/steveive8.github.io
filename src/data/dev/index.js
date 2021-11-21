@@ -1,7 +1,7 @@
 const string = `
 # Develop
 
-Private Project on New generation Platform based on Geo AR, the new word "O2R - Online to Reality" will be shown in few months.
+Project on New generation Platform based on Geo AR, the new word "O2R - Online to Reality".
 `
 
 export const dev_main = {
