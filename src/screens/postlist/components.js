@@ -71,7 +71,7 @@ export const Posts = ({setPage, content, setMainContent}) => {
     }
     return (
         <Col onClick={() => selector()} to="cursor" position="relative" height="200px" flex={1} br="20px" margin="margin: 10px;" bg="rgb(20,20,20)" padding="padding: 15px;" style={{overflow: 'hidden'}}>
-            <Text margin="margin-bottom: 5px;" lh={18} size={17} weight="600">{content.title}</Text>
+            <Text margin="margin-bottom: 17px;" lh={18} size={17} weight="600">{content.title}</Text>
             <Typer type={content.type} />
             {(content.project || content.study) &&  <Tag content={content} />}
         </Col>
