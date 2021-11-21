@@ -1,12 +1,12 @@
-import relativityimage from '../../imgs/spacetime.jpg';
+import relativityimage from '../../imgs/relativity.png';
 
 const string = `
 # Relativity Theory
 
-Over the last decades, highly specialized and accurate discretization schemes have been developed to solve fundamental model equations such as the 
-Navier-Stokes, Maxwell’s, or Schroedinger’s equations. Seemingly trivial changes to the discretization can determine whether key phenomena are visible 
-in the solutions or not. Rather than discarding the powerful methods that have been developed in the field of numerical mathematics, I want to show 
-that it is highly beneficial to use them as much as possible when applying Deep Learning.
+The integration of translational symmetry into machine learning models is one of the key factors responsible for driving the revolutionary advances 
+seen in computer vision over the past decade (combined with the proliferation of data and compute power).
+
+"Integrating symmetry into machine learning for planar images and beyond".
 `
 
 export const relativity_main = {
