@@ -23,7 +23,7 @@ export const quantaum_main = {
     markdown: string,
     image: quantaumimage,
     imageStyle: {marginBottom: 40},
-    hashtags: [],
+    hashtags: ['Universal Law', 'Grand unification theory', 'Quantaum Physics with Machine Learning'],
 };
 
 export const quantaum = [];

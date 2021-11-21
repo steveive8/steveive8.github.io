@@ -24,7 +24,7 @@ export const ai_main = {
     markdown: string,
     image: aiimage,
     imageStyle: {marginBottom: 40},
-    hashtags: ['iOS', 'Android', 'React Native', 'React.js', 'Web']
+    hashtags: ['Deep Learning', 'Object Detection', 'Generative Adversarial Networks', 'CNN', 'Transformer']
 };
 
 const ai_ = [

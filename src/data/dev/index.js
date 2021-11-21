@@ -21,7 +21,7 @@ export const dev_main = {
     markdown: string,
     image: null,
     imageStyle: {marginBottom: 40},
-    hashtags: [],
+    hashtags: ['AR', 'Geo based SNS', 'iOS', 'Android', 'React Native', 'React.js', 'Web'],
 };
 
 export const dev = [];

@@ -23,7 +23,7 @@ export const blockchain_main = {
     markdown: string,
     image: blockchainimage,
     imageStyle: {marginBottom: 40},
-    hashtags: [],
+    hashtags: ['Ethereum', 'Solidity', 'Web3.js', 'Decentralized Protocol', 'Decentralized Ledger'],
 };
 
 export const blockchain = [

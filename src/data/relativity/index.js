@@ -23,7 +23,7 @@ export const relativity_main = {
     markdown: string,
     image: relativityimage,
     imageStyle: {marginBottom: 40},
-    hashtags: [],
+    hashtags: ['Universal Law', 'Grand unification theory', 'Relativity with Machine Learning'],
 };
 
 export const relativity = [];
