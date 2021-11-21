@@ -1,10 +1,7 @@
-import relativityimage from '../../imgs/relativity.png';
+import relativityimage from '../../imgs/spacetime.jpg';
 
 const string = `
 # Relativity Theory
-
-The integration of translational symmetry into machine learning models is one of the key factors responsible for driving the revolutionary advances 
-seen in computer vision over the past decade (combined with the proliferation of data and compute power).
 
 "Integrating symmetry into machine learning for planar images and beyond".
 `
