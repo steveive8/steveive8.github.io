@@ -3,21 +3,11 @@ import relativityimage from '../../imgs/spacetime.jpg';
 const string = `
 # Relativity Theory
 
-Introduction homepage of Steve Ive. You can find my projects, researches and philosophy etc.
-
-https://steveive8.github.io
-
-👋 Hi, I’m @steveive8 I'm an undergraduate student of Korea Univ. , department of Artificial Intelligence.
-
-I'm interested in
-
-- Adopting GAN(Generative Adversarial Network) to Art, Global Economy, and Human Cognitive.
-- Realtime Object Detection and developing CNN(Convolutional Neural Network) to the best capability.
-- Self training Gym Environment with combining GAN and Reinforcement Learning.
-- Protocol Economy, Share Economy Modeling to 'Zero Marginal Society' with Blockchain.
-- Service Develop and Design, FullStack Engineering with React.js, React Native, Javascript, Node.js, SQL.
-
-Thanks 😁`
+Over the last decades, highly specialized and accurate discretization schemes have been developed to solve fundamental model equations such as the 
+Navier-Stokes, Maxwell’s, or Schroedinger’s equations. Seemingly trivial changes to the discretization can determine whether key phenomena are visible 
+in the solutions or not. Rather than discarding the powerful methods that have been developed in the field of numerical mathematics, I want to show 
+that it is highly beneficial to use them as much as possible when applying Deep Learning.
+`
 
 export const relativity_main = {
     markdown: string,
