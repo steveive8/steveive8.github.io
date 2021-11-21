@@ -6,7 +6,7 @@ const gfm = require('remark-gfm');
 
 export const Top = ({main}) => {
     return (
-        <Row padding="padding: 10%; padding-bottom: 0;">
+        <Row padding="padding: 10%; padding-bottom: 0;" height="640px">
             <Col className="description" flex={2}>
                 <ReactMarkdown remarkPlugins={[gfm]} children={main.markdown} />
                 <Flex margin="margin-top: 20px;">
