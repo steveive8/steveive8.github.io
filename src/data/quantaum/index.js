@@ -1,4 +1,4 @@
-import quantaumimage from '../../imgs/quantaum.jfif';
+import quantaumimage from '../../imgs/q.png';
 
 const string = `
 # Quantaum Physics
